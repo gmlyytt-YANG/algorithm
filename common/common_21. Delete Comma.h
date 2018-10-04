@@ -1,8 +1,16 @@
-// Created by Administrator on 2018/9/14.
-// Author: liyang
-//
-// 用O(n)的方法刪除字符串内多余的括号,
-// 例如，从abc,,,bdc,,a中删除多余的三个, 保留下能够分割字符串的,
+/*************************************************************************
+ *
+ * Copyright (c) 2018 liyang. All Rights Reserved
+ *
+ ************************************************************************/
+
+/*
+ * @file common_21. Delete Comma.h
+ * @author gmlyytt@outlook.com
+ * @date 2018/09/14 20:35:00
+ * @brief 用O(n)的方法刪除字符串内多余的括号,
+ * @brief 例如，从abc,,,bdc,,a中删除多余的三个, 保留下能够分割字符串的,
+ * */
 
 #ifndef INC_1STPROGRAM_COMMON_21_DELETE_COMMA_H
 #define INC_1STPROGRAM_COMMON_21_DELETE_COMMA_H

@@ -1,7 +1,15 @@
-// Created by Li,Yang(Duer04) on 2018/8/12.
-// Author: liyang
-//
-// 开平方
+/*************************************************************************
+ *
+ * Copyright (c) 2018 liyang. All Rights Reserved
+ *
+ ************************************************************************/
+
+/*
+ * @file common_3. Sqrt.h
+ * @author gmlyytt@outlook.com
+ * @date 2018/08/12 20:35:00
+ * @brief 开平方
+ * */
 
 #ifndef INC_1STPROGRAM_COMMON_3_SQRT_H
 #define INC_1STPROGRAM_COMMON_3_SQRT_H

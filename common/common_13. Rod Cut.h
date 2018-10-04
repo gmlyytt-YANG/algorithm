@@ -1,7 +1,15 @@
-// Created by Li,Yang(Duer04) on 2018/8/25.
-// Author: liyang
-//
-// 算法导论动态规划第一题，切钢条
+/*************************************************************************
+ *
+ * Copyright (c) 2018 liyang. All Rights Reserved
+ *
+ ************************************************************************/
+
+/*
+ * @file common_13. Rod Cut.h
+ * @author gmlyytt@outlook.com
+ * @date 2018/08/25 20:35:00
+ * @brief 算法导论动态规划第一题，切钢条
+ * */
 
 #ifndef INC_1STPROGRAM_COMMON_13_ROD_CUT_H
 #define INC_1STPROGRAM_COMMON_13_ROD_CUT_H

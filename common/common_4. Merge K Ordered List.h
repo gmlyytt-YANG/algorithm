@@ -1,7 +1,15 @@
-// Created by Li,Yang(Duer04) on 2018/8/12.
-// Author: liyang
-//
-// 合并K个有序链表
+/*************************************************************************
+ *
+ * Copyright (c) 2018 liyang. All Rights Reserved
+ *
+ ************************************************************************/
+
+/*
+ * @file common_4. Merge K Ordered List.h
+ * @author gmlyytt@outlook.com
+ * @date 2018/08/12 20:35:00
+ * @brief 合并K个有序链表
+ * */
 
 #ifndef INC_1STPROGRAM_COMMON_4_MERGE_K_ORDERED_LIST_H
 #define INC_1STPROGRAM_COMMON_4_MERGE_K_ORDERED_LIST_H

@@ -1,7 +1,16 @@
-// Created by Li,Yang(Duer04) on 2018/8/13.
-// Author: liyang
-//
-// 链表是不是回文串
+/*************************************************************************
+ *
+ * Copyright (c) 2018 liyang. All Rights Reserved
+ *
+ ************************************************************************/
+
+/*
+ * @file common_10. Linked List Palindrome.h
+ * @author gmlyytt@outlook.com
+ * @date 2018/08/13 20:35:00
+ * @brief 链表是不是回文串
+ * */
+
 
 #ifndef INC_1STPROGRAM_COMMON_10_LINKED_LIST_PALINDROME_H
 #define INC_1STPROGRAM_COMMON_10_LINKED_LIST_PALINDROME_H

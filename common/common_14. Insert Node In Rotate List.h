@@ -1,7 +1,15 @@
-// Created by Li,Yang(Duer04) on 2018/8/25.
-// Author: liyang
-//
-// 环形链表中插入元素
+/*************************************************************************
+ *
+ * Copyright (c) 2018 liyang. All Rights Reserved
+ *
+ ************************************************************************/
+
+/*
+ * @file common_14. Insert Node In Rotate List.h
+ * @author gmlyytt@outlook.com
+ * @date 2018/08/25 20:35:00
+ * @brief 环形链表中插入元素
+ * */
 
 #ifndef INC_1STPROGRAM_COMMON_14_INSERT_NODE_IN_ROTATE_LIST_H
 #define INC_1STPROGRAM_COMMON_14_INSERT_NODE_IN_ROTATE_LIST_H

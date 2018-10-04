@@ -1,7 +1,15 @@
-// Created by Li,Yang(Duer04) on 2018/8/14.
-// Author: liyang
-//
-// 两个大数相乘
+/*************************************************************************
+ *
+ * Copyright (c) 2018 liyang. All Rights Reserved
+ *
+ ************************************************************************/
+
+/*
+ * @file common_11. Big Number Multiply.h
+ * @author gmlyytt@outlook.com
+ * @date 2018/08/14 20:35:00
+ * @brief 两个大数相乘
+ * */
 
 #ifndef INC_1STPROGRAM_COMMON_11_BIG_NUMBER_MULTIPLY_H
 #define INC_1STPROGRAM_COMMON_11_BIG_NUMBER_MULTIPLY_H

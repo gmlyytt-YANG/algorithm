@@ -1,7 +1,15 @@
-// Created by Li,Yang(Duer04) on 2018/8/13.
-// Author: liyang
-//
-// 最长回文子串
+/*************************************************************************
+ *
+ * Copyright (c) 2018 liyang. All Rights Reserved
+ *
+ ************************************************************************/
+
+/*
+ * @file common_7. Longest Palindrome Substring.h
+ * @author gmlyytt@outlook.com
+ * @date 2018/08/13 20:35:00
+ * @brief 最长回文子串
+ * */
 
 #ifndef INC_1STPROGRAM_COMMON_7_LONGEST_PALINDROME_SUBSTRING_H
 #define INC_1STPROGRAM_COMMON_7_LONGEST_PALINDROME_SUBSTRING_H

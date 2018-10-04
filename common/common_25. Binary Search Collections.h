@@ -1,7 +1,15 @@
-// Created by Administrator on 2018/9/24.
-// Author: liyang
-//
-// 在数组中找到一个数插入的合适位置，比如[1,2,2,3,5,7], 2的插入位置为2(下标从0开始)
+/*************************************************************************
+ *
+ * Copyright (c) 2018 liyang. All Rights Reserved
+ *
+ ************************************************************************/
+
+/*
+ * @file common_1. Specific Node in Binary Tree.h
+ * @author gmlyytt@outlook.com
+ * @date 2018/09/24 20:35:00
+ * @brief 在数组中找到一个数插入的合适位置，比如[1,2,2,3,5,7], 2的插入位置为2(下标从0开始)
+ * */
 
 #ifndef INC_1STPROGRAM_COMMON_25_SEARCH_BIGGEST_INSERT_POSITION_H
 #define INC_1STPROGRAM_COMMON_25_SEARCH_BIGGEST_INSERT_POSITION_H
@@ -9,6 +17,13 @@
 #include <iostream>
 #include <vector>
 
+/*
+ * @brief 二分查找的迭代模式
+ *
+ * @param arr input vector
+ * @param num target
+ * @return location
+ */
 int binary_search_iterative(const std::vector<int>& arr, const int num) {
     if (arr.empty()) {
         return -1;
@@ -28,6 +43,13 @@ int binary_search_iterative(const std::vector<int>& arr, const int num) {
     return -1;
 }
 
+/*
+ * @brief 二分查找的递归模式
+ *
+ * @param arr input vector
+ * @param num target
+ * @return location
+ */
 int binary_search_recursive(const std::vector<int>& arr, const int num, int low, int high) {
     if (arr.empty()) {
         return -1;

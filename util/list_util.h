@@ -1,6 +1,15 @@
-//
-// Created by Li,Yang(Duer04) on 2018/7/24.
-//
+/*************************************************************************
+ *
+ * Copyright (c) 2018 liyang. All Rights Reserved
+ *
+ ************************************************************************/
+
+/*
+ * @file tree_util.h
+ * @author gmlyytt@outlook.com
+ * @date 2018/10/04 20:35:00
+ * @brief 链表的基本操作
+ * */
 
 #ifndef INC_1STPROGRAM_LISTUTIL_H
 #define INC_1STPROGRAM_LISTUTIL_H
@@ -16,7 +25,7 @@ struct ListNode {
         next = nullptr;
     }
 
-    ListNode(const ListNode*& rhs) {
+    explicit ListNode(const ListNode*& rhs) {
         value = rhs->value;
         next = rhs->next;
     }
@@ -33,7 +42,7 @@ struct ComplexListNode {
         random = nullptr;
     }
 
-    ComplexListNode(const ComplexListNode*& rhs) {
+    explicit ComplexListNode(const ComplexListNode*& rhs) {
         if (rhs) {
             value = rhs->value;
             next = rhs->next;

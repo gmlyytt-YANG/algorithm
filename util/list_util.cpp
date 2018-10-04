@@ -1,7 +1,3 @@
-//
-// Created by Li,Yang(Duer04) on 2018/7/24.
-//
-
 #include "list_util.h"
 
 ListNode* create_list(std::vector<int>& values) {

@@ -1,7 +1,15 @@
-// Created by Li,Yang(Duer04) on 2018/8/13.
-// Author: liyang
-//
-// 字符串中回文串的数量
+/*************************************************************************
+ *
+ * Copyright (c) 2018 liyang. All Rights Reserved
+ *
+ ************************************************************************/
+
+/*
+ * @file common_9. Palindrome Total Number.h
+ * @author gmlyytt@outlook.com
+ * @date 2018/08/13 20:35:00
+ * @brief 字符串中回文串的数量
+ * */
 
 #ifndef INC_1STPROGRAM_COMMON_9_PALINDROME_NUMBER_H
 #define INC_1STPROGRAM_COMMON_9_PALINDROME_NUMBER_H

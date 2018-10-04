@@ -1,7 +1,16 @@
-// Created by Li,Yang(Duer04) on 2018/8/25.
-// Author: liyang
-//
-// 求绝对值算法优化
+/*************************************************************************
+ *
+ * Copyright (c) 2018 liyang. All Rights Reserved
+ *
+ ************************************************************************/
+
+/*
+ * @file common_15. Toutiao Algorithm Op.h
+ * @author gmlyytt@outlook.com
+ * @date 2018/08/25 20:35:00
+ * @brief 求绝对值算法优化
+ * */
+
 #ifndef INC_1STPROGRAM_COMMON_15_ALGORITHM_OP_TOUTIAO_H
 #define INC_1STPROGRAM_COMMON_15_ALGORITHM_OP_TOUTIAO_H
 

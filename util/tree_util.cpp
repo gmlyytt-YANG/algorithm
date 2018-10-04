@@ -1,7 +1,3 @@
-//
-// Created by Li,Yang(Duer04) on 2018/7/23.
-//
-
 #include "tree_util.h"
 
 void connect_tree_node(TreeNodeMulti* pRoot, std::vector<TreeNodeMulti*>& pNodes) {

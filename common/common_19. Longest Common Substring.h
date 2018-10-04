@@ -1,7 +1,16 @@
-// Created by Administrator on 2018/9/10.
-// Author: liyang
-//
-// 两个子串的最长公共子串
+/*************************************************************************
+ *
+ * Copyright (c) 2018 liyang. All Rights Reserved
+ *
+ ************************************************************************/
+
+/*
+ * @file common_19. Longest Common Substring.h
+ * @author gmlyytt@outlook.com
+ * @date 2018/09/10 20:35:00
+ * @brief 两个子串的最长公共子串
+ * */
+
 
 #ifndef INC_1STPROGRAM_COMMON_19_LONGEST_COMMON_SUBSTRING_H
 #define INC_1STPROGRAM_COMMON_19_LONGEST_COMMON_SUBSTRING_H

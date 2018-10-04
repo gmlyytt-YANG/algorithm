@@ -1,7 +1,15 @@
-// Created by Administrator on 2018/9/20.
-// Author : liyang
-//
-// 数组子集（不连续）的全排列
+/*************************************************************************
+ *
+ * Copyright (c) 2018 liyang. All Rights Reserved
+ *
+ ************************************************************************/
+
+/*
+ * @file common_24. Permutation.h
+ * @author gmlyytt@outlook.com
+ * @date 2018/09/20 20:35:00
+ * @brief 数组子集（不连续）的全排列
+ * */
 
 #ifndef INC_1STPROGRAM_COMMON_24_PERMUTATION_H
 #define INC_1STPROGRAM_COMMON_24_PERMUTATION_H
@@ -27,7 +35,6 @@ void core(std::vector<int> &arr, std::vector<int> &temp, int start, int &count, 
     if (start == arr.size()) {
         return;
     }
-    // core(arr, temp, start + 1, count, k);
     for (int i = start; i < arr.size(); ++i) {
         temp.push_back(arr[i]);
         core(arr, temp, i + 1, count, k);

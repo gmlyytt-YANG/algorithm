@@ -1,7 +1,15 @@
-// Created by Li,Yang(Duer04) on 2018/8/5.
-// Author: liyang
-//
-// 链表的入口节点
+/*************************************************************************
+ *
+ * Copyright (c) 2018 liyang. All Rights Reserved
+ *
+ ************************************************************************/
+
+/*
+ * @file common_2. Circle in Linked List.h
+ * @author gmlyytt@outlook.com
+ * @date 2018/08/05 20:35:00
+ * @brief 链表的入口节点
+ * */
 
 #ifndef INC_1STPROGRAM_COMMON_2_CIRCLE_IN_LINKED_LIST_H
 #define INC_1STPROGRAM_COMMON_2_CIRCLE_IN_LINKED_LIST_H
