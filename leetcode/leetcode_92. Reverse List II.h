@@ -1,6 +1,3 @@
-//
-// Created by Li,Yang(Duer04) on 2018/9/4.
-//
 /*************************************************************************
  *
  * Copyright (c) 2018 liyang. All Rights Reserved
