@@ -1,7 +1,15 @@
-// Created by Li,Yang(Duer04) on 2018/8/22.
-// Author: liyang
-//
-// 寻找矩阵中的路径
+/*************************************************************************
+ *
+ * Copyright (c) 2018 liyang. All Rights Reserved
+ *
+ ************************************************************************/
+
+/*
+ * @file leetcode_79. Word Search.h
+ * @author gmlyytt@outlook.com
+ * @date 2018/08/22 10:01:00
+ * @brief https://leetcode.com/problems/word-search/description/
+ * */
 
 #ifndef INC_1STPROGRAM_LEETCODE_79_WORD_SEARCH_H
 #define INC_1STPROGRAM_LEETCODE_79_WORD_SEARCH_H
@@ -9,9 +17,9 @@
 #include <iostream>
 #include <vector>
 
-bool find_path_core(std::vector<std::vector<char>>& matrix, int row, int col,
-        int rows, int cols, std::vector<std::vector<bool>>& visited,
-        int& current_location, std::string& str) {
+bool find_path_core(std::vector<std::vector<char>> &matrix, int row, int col,
+                    int rows, int cols, std::vector<std::vector<bool>> &visited,
+                    int &current_location, std::string &str) {
     if (current_location == str.size()) {
         return true;
     }
@@ -33,7 +41,7 @@ bool find_path_core(std::vector<std::vector<char>>& matrix, int row, int col,
     return found;
 }
 
-bool find_path(std::vector<std::vector<char>>& matrix, std::string& str) {
+bool find_path(std::vector<std::vector<char>> &matrix, std::string &str) {
     if (str.empty() || matrix.empty() || matrix[0].empty()) {
         return false;
     }
@@ -63,4 +71,5 @@ void test_matrix_route() {
     std::string str = "ABFB";
     std::cout << find_path(matrix, str) << std::endl;
 }
+
 #endif //INC_1STPROGRAM_LEETCODE_79_WORD_SEARCH_H

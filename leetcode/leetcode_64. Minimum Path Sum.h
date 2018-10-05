@@ -1,17 +1,22 @@
-// Created by Li,Yang(Duer04) on 2018/8/25.
-// Author: liyang
-//
-// Minimum Path Sum
+/*************************************************************************
+ *
+ * Copyright (c) 2018 liyang. All Rights Reserved
+ *
+ ************************************************************************/
+
+/*
+ * @file leetcode_64. Minimum Path Sum.h
+ * @author gmlyytt@outlook.com
+ * @date 2018/08/25 10:01:00
+ * @brief https://leetcode.com/problems/minimum-path-sum/description/
+ * */
 
 #ifndef INC_1STPROGRAM_LEETCODE_64_MINIMUM_PATH_SUM_H
 #define INC_1STPROGRAM_LEETCODE_64_MINIMUM_PATH_SUM_H
 
-#include <vector>
-#include <iostream>
+#include "../util/header_util.h"
 
-using namespace std;
-
-vector<int> minPathSum(vector<vector<int>>& grid) {
+vector<int> minPathSum(vector<vector<int>> &grid) {
     int rows = grid.size();
     int cols = grid[0].size();
     vector<int> final_result;
@@ -19,15 +24,13 @@ vector<int> minPathSum(vector<vector<int>>& grid) {
         return final_result;
     }
     vector<vector<int>> result = grid;
-    for (int i=0; i<grid.size(); ++i) {
-        for (int j=0; j<grid[0].size(); ++j) {
+    for (int i = 0; i < grid.size(); ++i) {
+        for (int j = 0; j < grid[0].size(); ++j) {
             if (i && j) {
-                result[i][j] += min(result[i-1][j], result[i][j-1]);
-            }
-            else if (i) {
-                result[i][j] += result[i-1][j];
-            }
-            else if (j) {
+                result[i][j] += min(result[i - 1][j], result[i][j - 1]);
+            } else if (i) {
+                result[i][j] += result[i - 1][j];
+            } else if (j) {
                 result[i][j] += result[i][j - 1];
             }
         }
@@ -57,4 +60,5 @@ void test_minPathSum() {
     vector<int> result = minPathSum(grid);
 
 }
+
 #endif //INC_1STPROGRAM_LEETCODE_64_MINIMUM_PATH_SUM_H

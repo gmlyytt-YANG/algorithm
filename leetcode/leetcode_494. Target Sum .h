@@ -1,15 +1,20 @@
-// Created by Li,Yang(Duer04) on 2018/8/23.
-// Author: liyang
-//
-// target sum
+/*************************************************************************
+ *
+ * Copyright (c) 2018 liyang. All Rights Reserved
+ *
+ ************************************************************************/
+
+/*
+ * @file leetcode_494. Target Sum .h
+ * @author gmlyytt@outlook.com
+ * @date 2018/08/23 10:01:00
+ * @brief https://leetcode.com/problems/target-sum/description/
+ * */
 
 #ifndef INC_1STPROGRAM_LEETCODE_494_TARGET_SUM_H
 #define INC_1STPROGRAM_LEETCODE_494_TARGET_SUM_H
 
-#include <algorithm>
-#include <iostream>
-#include <numeric>
-#include <vector>
+#include "../util/header_util.h"
 
 int find_target_sum_ways_core(std::vector<int>& nums, int target) {
     if (nums.empty()) {

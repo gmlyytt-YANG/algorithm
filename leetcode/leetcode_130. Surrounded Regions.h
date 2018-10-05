@@ -15,14 +15,11 @@
 #ifndef INC_1STPROGRAM_LEETCODE_130_SURROUNDED_REGIONS_H
 #define INC_1STPROGRAM_LEETCODE_130_SURROUNDED_REGIONS_H
 
-#include <iostream>
-#include <vector>
-
-using namespace std;
+#include "../util/header_util.h"
 
 class Solution {
 public:
-    template <typename T>
+    template<typename T>
     void print(vector<vector<T>> &board) {
         for (int i = 0; i < board.size(); ++i) {
             for (int j = 0; j < board[0].size(); ++j) {
@@ -71,7 +68,7 @@ public:
 
 void test_board_X_O() {
     vector<vector<char>> board =
-    Solution().solve(board);
+            Solution().solve(board);
 }
 
 #endif //INC_1STPROGRAM_LEETCODE_130_SURROUNDED_REGIONS_H

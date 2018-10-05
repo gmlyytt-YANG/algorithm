@@ -15,10 +15,7 @@
 #ifndef INC_1STPROGRAM_LEETCODE_200_NUMBER_OF_ISLANDS_H
 #define INC_1STPROGRAM_LEETCODE_200_NUMBER_OF_ISLANDS_H
 
-#include <iostream>
-#include <vector>
-
-using namespace std;
+#include "../util/header_util.h"
 
 class Solution {
 public:

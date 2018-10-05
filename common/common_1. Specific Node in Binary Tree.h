@@ -13,8 +13,7 @@
 #ifndef INC_1STPROGRAM_COMMON_1_SPECIFIC_NODE_IN_BINARY_TREE_H
 #define INC_1STPROGRAM_COMMON_1_SPECIFIC_NODE_IN_BINARY_TREE_H
 
-#include <iostream>
-#include <queue>
+#include "../util/header_util.h"
 
 #include "../util/tree_util.h"
 

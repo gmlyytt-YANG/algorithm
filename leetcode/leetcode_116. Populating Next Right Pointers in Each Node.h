@@ -15,12 +15,8 @@
 #ifndef INC_1STPROGRAM_LEETCODE_116_POPULATING_NEXT_RIGHT_POINTERS_IN_EACH_NODE_H
 #define INC_1STPROGRAM_LEETCODE_116_POPULATING_NEXT_RIGHT_POINTERS_IN_EACH_NODE_H
 
-#include <iostream>
-#include <vector>
-
+#include "../util/header_util.h"
 #include "../util/tree_util.h"
-
-using namespace std;
 
 class Solution {
 public:
@@ -41,16 +37,17 @@ public:
 };
 
 void test_connect_tree_node() {
-    TreeLinkNode* node1 = new TreeLinkNode(1);
-    TreeLinkNode* node2 = new TreeLinkNode(2);
-    TreeLinkNode* node3 = new TreeLinkNode(3);
-    TreeLinkNode* node4 = new TreeLinkNode(4);
-    TreeLinkNode* node5 = new TreeLinkNode(5);
-    TreeLinkNode* node6 = new TreeLinkNode(6);
-    TreeLinkNode* node7 = new TreeLinkNode(7);
+    TreeLinkNode *node1 = new TreeLinkNode(1);
+    TreeLinkNode *node2 = new TreeLinkNode(2);
+    TreeLinkNode *node3 = new TreeLinkNode(3);
+    TreeLinkNode *node4 = new TreeLinkNode(4);
+    TreeLinkNode *node5 = new TreeLinkNode(5);
+    TreeLinkNode *node6 = new TreeLinkNode(6);
+    TreeLinkNode *node7 = new TreeLinkNode(7);
     connect_tree_node(node1, node2, node3);
     connect_tree_node(node2, node4, node5);
     connect_tree_node(node3, node6, node7);
     Solution().connect(node1);
 }
+
 #endif //INC_1STPROGRAM_LEETCODE_116_POPULATING_NEXT_RIGHT_POINTERS_IN_EACH_NODE_H

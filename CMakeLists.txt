@@ -8,6 +8,7 @@ add_executable(algorithm
         header.h
         util/tree_util.h util/tree_util.cpp
         util/list_util.h util/list_util.cpp
+        util/header_util.h
         "leetcode/leetcode_75. SortColors.h"
         "leetcode/leetcode_76. Minimum Window Substring.h"
         "offer/offer_68. Latest Ancient Of Two Nodes.h"
@@ -111,4 +112,5 @@ add_executable(algorithm
         "sort/merge_sort.h"
         "sort/quick_sort.h"
         "sort/shell_sort.h"
-        "leetcode/leetcode_116. Populating Next Right Pointers in Each Node.h")
+        "leetcode/leetcode_116. Populating Next Right Pointers in Each Node.h"
+        "leetcode/leetcode_417. Pacific Atlantic Water Flow.h")

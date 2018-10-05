@@ -14,13 +14,8 @@
 #ifndef INC_1STPROGRAM_LEETCODE_129_SUM_ROOT_TO_LEAF_NUMBERS_H
 #define INC_1STPROGRAM_LEETCODE_129_SUM_ROOT_TO_LEAF_NUMBERS_H
 
-#include <iostream>
-#include <vector>
-#include <cmath>
-
+#include "../util/header_util.h"
 #include "../util/tree_util.h"
-
-using namespace std;
 
 class Solution {
 public:

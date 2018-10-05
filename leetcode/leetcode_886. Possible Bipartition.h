@@ -14,12 +14,7 @@
 #ifndef INC_1STPROGRAM_LEETCODE_886_POSSIBLE_BIPARTITION_H
 #define INC_1STPROGRAM_LEETCODE_886_POSSIBLE_BIPARTITION_H
 
-#include <iostream>
-#include <vector>
-#include <map>
-#include <set>
-
-using namespace std;
+#include "../util/header_util.h"
 
 class Solution {
 public:

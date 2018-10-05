@@ -3,6 +3,20 @@
 //
 // coin change
 
+/*************************************************************************
+ *
+ * Copyright (c) 2018 liyang. All Rights Reserved
+ *
+ ************************************************************************/
+
+/*
+ * @file leetcode_200. Number of Islands.h
+ * @author liyang921126@gmail.com
+ * @date 2018/09/09 11:10:00
+ * @brief leetcode 200
+ * @link https://leetcode.com/problems/coin-change/description/
+ * */
+
 #ifndef INC_1STPROGRAM_LEETCODE_322_COIN_CHANGE_H
 #define INC_1STPROGRAM_LEETCODE_322_COIN_CHANGE_H
 

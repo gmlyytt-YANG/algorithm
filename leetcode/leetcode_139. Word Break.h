@@ -2,16 +2,25 @@
 // Created by Li,Yang(Duer04) on 2018/8/1.
 //
 
+/*************************************************************************
+ *
+ * Copyright (c) 2018 liyang. All Rights Reserved
+ *
+ ************************************************************************/
+
+/*
+ * @file leetcode_139. Word Break.h
+ * @author gmlyytt@outlook.com
+ * @date 2018/08/01 10:01:00
+ * @brief https://leetcode.com/problems/word-break/description/
+ * */
+
 #ifndef INC_1STPROGRAM_LEETCODE_139_WORD_BREAK_H
 #define INC_1STPROGRAM_LEETCODE_139_WORD_BREAK_H
 
-#include <iostream>
-#include <vector>
-#include <unordered_set>
+#include "../util/header_util.h"
 
-using namespace std;
-
-bool wordBreak(string s, vector<string>& wordDict) {
+bool wordBreak(string s, vector<string> &wordDict) {
     int length = s.size();
     if (wordDict.empty() || s.empty()) {
         return false;

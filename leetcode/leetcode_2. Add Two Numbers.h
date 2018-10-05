@@ -1,15 +1,23 @@
-// Created by Li,Yang(Duer04) on 2018/8/14.
-// Author: liyang
-//
-// 两个大数相加
+/*************************************************************************
+ *
+ * Copyright (c) 2018 liyang. All Rights Reserved
+ *
+ ************************************************************************/
+
+/*
+ * @file leetcode_2. Add Two Numbers.h
+ * @author gmlyytt@outlook.com
+ * @date 2018/08/14 10:01:00
+ * @brief 两个大数相加
+ * */
 
 #ifndef INC_1STPROGRAM_LEETCODE_2_ADD_TWO_NUMBERS_H
 #define INC_1STPROGRAM_LEETCODE_2_ADD_TWO_NUMBERS_H
 
-#include <iostream>
+#include "../util/header_util.h"
 #include "../util/list_util.h"
 
-std::string add_two_numbers_string(std::string& str1, std::string& str2) {
+std::string add_two_numbers_string(std::string &str1, std::string &str2) {
     std::string str1_reverse = str1;
     std::string str2_reverse = str2;
     std::string result;
@@ -33,8 +41,8 @@ std::string add_two_numbers_string(std::string& str1, std::string& str2) {
     return result;
 }
 
-std::string add_two_numbers_string_recursive_core(std::string& str1, std::string& str2,
-        int index_1, int index_2, int carry) {
+std::string add_two_numbers_string_recursive_core(std::string &str1, std::string &str2,
+                                                  int index_1, int index_2, int carry) {
     std::string result;
     if (index_1 < str1.size() || index_2 < str2.size() || carry) {
         int bit_1 = index_1 < str1.size() ? str1[index_1] - '0' : 0;
@@ -43,12 +51,12 @@ std::string add_two_numbers_string_recursive_core(std::string& str1, std::string
         carry = sum / 10;
         result = sum % 10 + '0';
         result += add_two_numbers_string_recursive_core(str1, str2, ++index_1,
-                ++index_2, carry);
+                                                        ++index_2, carry);
     }
     return result;
 }
 
-std::string add_two_numbers_string_recursive(std::string& str1, std::string& str2) {
+std::string add_two_numbers_string_recursive(std::string &str1, std::string &str2) {
     std::string str1_reverse = str1;
     std::string str2_reverse = str2;
     std::string result;
@@ -62,14 +70,14 @@ std::string add_two_numbers_string_recursive(std::string& str1, std::string& str
     return result;
 }
 
-ListNode* add_two_numbers(ListNode* head1, ListNode* head2) {
-    ListNode* head = new ListNode(0);
-    ListNode* traverse_node = head;
+ListNode *add_two_numbers(ListNode *head1, ListNode *head2) {
+    ListNode *head = new ListNode(0);
+    ListNode *traverse_node = head;
     int carry = 0;
     while (head1 || head2 || carry) {
         int sum = (head1 ? head1->value : 0) + (head2 ? head2->value : 0) + carry;
         carry = sum / 10;
-        ListNode* node = new ListNode(sum % 10);
+        ListNode *node = new ListNode(sum % 10);
         traverse_node->next = node;
         traverse_node = traverse_node->next;
         head1 = head1 ? head1->next : nullptr;
@@ -78,11 +86,11 @@ ListNode* add_two_numbers(ListNode* head1, ListNode* head2) {
     return head->next;
 }
 
-void add_two_numbers_recursive(ListNode* head1, ListNode* head2, ListNode* head, int carry) {
+void add_two_numbers_recursive(ListNode *head1, ListNode *head2, ListNode *head, int carry) {
     if (head1 || head2 || carry) {
         int sum = (head1 ? head1->value : 0) + (head2 ? head2->value : 0) + carry;
         carry = sum / 10;
-        ListNode* node = new ListNode(sum % 10);
+        ListNode *node = new ListNode(sum % 10);
         head->next = node;
         head1 = head1 ? head1->next : nullptr;
         head2 = head2 ? head2->next : nullptr;
@@ -91,12 +99,12 @@ void add_two_numbers_recursive(ListNode* head1, ListNode* head2, ListNode* head,
 }
 
 void test_add_two_numbers() {
-    std::vector<int> arr1 = {1,2,3,4,5,7};
-    std::vector<int> arr2 = {5,9,1,2,9,3};
-    ListNode* head1 = create_list(arr1);
-    ListNode* head2 = create_list(arr2);
-    ListNode* head = new ListNode(0);
-    ListNode* result = add_two_numbers(head1, head2);
+    std::vector<int> arr1 = {1, 2, 3, 4, 5, 7};
+    std::vector<int> arr2 = {5, 9, 1, 2, 9, 3};
+    ListNode *head1 = create_list(arr1);
+    ListNode *head2 = create_list(arr2);
+    ListNode *head = new ListNode(0);
+    ListNode *result = add_two_numbers(head1, head2);
     add_two_numbers_recursive(head1, head2, head, 0);
 
     std::string str1 = "754321";
@@ -104,4 +112,5 @@ void test_add_two_numbers() {
     // std::string result_string = add_two_numbers_string(str1, str2);
     std::string result_string_2 = add_two_numbers_string_recursive(str1, str2);
 }
+
 #endif //INC_1STPROGRAM_LEETCODE_2_ADD_TWO_NUMBERS_H
