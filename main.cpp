@@ -1,6 +1,6 @@
 #include "header.h"
 
 int main() {
-    test_find_paths();
+    test_construct_tree();
     return 0;
 }
