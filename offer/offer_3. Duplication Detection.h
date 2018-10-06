@@ -1,17 +1,24 @@
-// Created by Li,Yang(Duer04) on 2018/8/21.
-// Author: liyang
-//
-// 找出数组中重复的数字
+/*************************************************************************
+ *
+ * Copyright (c) 2018 liyang. All Rights Reserved
+ *
+ ************************************************************************/
+
+/*
+ * @file offer_3. Duplication Detection.h
+ * @author gmlyytt@outlook.com
+ * @date 2018/08/21 10:29:00
+ * @brief 剑指offer第3题 找出数组中重复的数字
+ * */
 
 #ifndef INC_1STPROGRAM_OFFER_3_DUPLICATION_DETECTION_H
 #define INC_1STPROGRAM_OFFER_3_DUPLICATION_DETECTION_H
 
-#include <iostream>
-#include <vector>
+#include "../util/header_util.h"
 
-bool duplicate(int numbers[], int length, int* duplication) {
+bool duplicate(int numbers[], int length, int *duplication) {
     for (int i = 0; i < length; ++i) {
-        if (numbers[i] > length -1 || numbers[i] < 0) {
+        if (numbers[i] > length - 1 || numbers[i] < 0) {
             return false;
         }
     }
@@ -37,4 +44,5 @@ void test_duplicate() {
         std::cout << duplication << std::endl;
     }
 }
+
 #endif //INC_1STPROGRAM_OFFER_3_DUPLICATION_DETECTION_H

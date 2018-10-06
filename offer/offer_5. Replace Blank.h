@@ -1,44 +1,22 @@
-// Created by Li,Yang(Duer04) on 2018/8/20.
-// Author: liyang
-//
-// 把字符串中的空格替换成指定字符
+/*************************************************************************
+ *
+ * Copyright (c) 2018 liyang. All Rights Reserved
+ *
+ ************************************************************************/
+
+/*
+ * @file offer_5. Replace Blank.h
+ * @author gmlyytt@outlook.com
+ * @date 2018/08/20 10:29:00
+ * @brief 剑指offer第5题 把字符串中的空格替换成指定字符
+ * */
 
 #ifndef INC_1STPROGRAM_OFFER_5_REPLACE_BLANK_H
 #define INC_1STPROGRAM_OFFER_5_REPLACE_BLANK_H
 
-#include <iostream>
-#include <vector>
+#include "../util/header_util.h"
 
-//std::string replace_blank(std::string& str, std::string& replacing_str) {
-//    if (str.empty() || replacing_str.empty()) {
-//        return "";
-//    }
-//    int blank_num = 0;
-//    int length = str.size();
-//    int new_length = 0;
-//    for (auto& elem : str) {
-//        if (elem == ' ') {
-//            ++blank_num;
-//        }
-//    }
-//    new_length = length + (replacing_str.size() - 1) * blank_num;
-//    std::string new_string(new_length, ' ');
-//    int old_tail = length - 1;
-//    int new_tail = new_length - 1;
-//    while (old_tail >= 0 && old_tail != new_tail) {
-//        if (str[old_tail] == ' ') {
-//            for (int i = replacing_str.size() - 1; i >= 0; --i) {
-//                new_string[new_tail--] = replacing_str[i];
-//            }
-//        } else {
-//            new_string[new_tail--] = str[old_tail];
-//        }
-//        --old_tail;
-//    }
-//    return new_string;
-//}
-
-std::string replace_blank(std::string& str, std::string& replacing_str) {
+std::string replace_blank(std::string &str, std::string &replacing_str) {
     if (str.empty()) {
         return replacing_str;
     }
@@ -47,7 +25,7 @@ std::string replace_blank(std::string& str, std::string& replacing_str) {
     }
     int length = str.size();
     int blank_num = 0;
-    for (auto& elem : str) {
+    for (auto &elem : str) {
         if (elem == ' ') {
             ++blank_num;
         }
@@ -77,4 +55,5 @@ void test_replace_blank() {
     std::string replacing_str = "%%%%";
     std::string result = replace_blank(str, replacing_str);
 }
+
 #endif //INC_1STPROGRAM_OFFER_5_REPLACE_BLANK_H

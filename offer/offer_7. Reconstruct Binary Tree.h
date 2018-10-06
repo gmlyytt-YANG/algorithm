@@ -1,19 +1,25 @@
-// Created by Li,Yang(Duer04) on 2018/8/15.
-// Author: liyang
-//
-// 重构二叉树
+/*************************************************************************
+ *
+ * Copyright (c) 2018 liyang. All Rights Reserved
+ *
+ ************************************************************************/
+
+/*
+ * @file offer_7. Reconstruct Binary Tree.h
+ * @author gmlyytt@outlook.com
+ * @date 2018/08/15 10:29:00
+ * @brief 剑指offer第7题 重构二叉树
+ * */
 
 #ifndef INC_1STPROGRAM_OFFER_7_RECONSTRUCT_BINARY_TREE_H
 #define INC_1STPROGRAM_OFFER_7_RECONSTRUCT_BINARY_TREE_H
 
-#include <iostream>
-#include <vector>
-
+#include "../util/header_util.h"
 #include "../util/tree_util.h"
 
-TreeNode* construct_tree_core(std::vector<int>& pre, std::vector<int>& in,
-        int pre_begin, int pre_end, int in_begin, int in_end) {
-    TreeNode* root = new TreeNode(pre[pre_begin]);
+TreeNode *construct_tree_core(std::vector<int> &pre, std::vector<int> &in,
+                              int pre_begin, int pre_end, int in_begin, int in_end) {
+    TreeNode *root = new TreeNode(pre[pre_begin]);
     int root_value = root->val;
 
     // 树上只有一个节点
@@ -43,16 +49,16 @@ TreeNode* construct_tree_core(std::vector<int>& pre, std::vector<int>& in,
 
     if (left_length) {
         root->left = construct_tree_core(pre, in, pre_begin + 1,
-                pre_begin + left_length, in_begin, root_in_location - 1);
+                                         pre_begin + left_length, in_begin, root_in_location - 1);
     }
     if (pre_end - pre_begin - left_length) {
         root->right = construct_tree_core(pre, in, pre_begin + left_length + 1, pre_end,
-                root_in_location + 1, in_end);
+                                          root_in_location + 1, in_end);
     }
     return root;
 }
 
-TreeNode* reconstruct_tree(std::vector<int>& pre, std::vector<int>& in) {
+TreeNode *reconstruct_tree(std::vector<int> &pre, std::vector<int> &in) {
     if (pre.empty() || in.empty() || pre.size() != in.size()) {
         return nullptr;
     }
@@ -62,6 +68,7 @@ TreeNode* reconstruct_tree(std::vector<int>& pre, std::vector<int>& in) {
 void test_reconstruct_tree() {
     std::vector<int> pre = {1, 2, 4, 5, 3, 6, 7};
     std::vector<int> in = {4, 2, 5, 1, 6, 3, 7};
-    TreeNode* result = reconstruct_tree(pre, in);
+    TreeNode *result = reconstruct_tree(pre, in);
 }
+
 #endif //INC_1STPROGRAM_OFFER_7_RECONSTRUCT_BINARY_TREE_H
