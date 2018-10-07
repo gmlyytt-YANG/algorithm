@@ -1,6 +1,6 @@
 #include "header.h"
 
 int main() {
-    test_construct_tree();
+    test_max_area();
     return 0;
 }
