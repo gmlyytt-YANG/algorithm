@@ -1,6 +1,6 @@
 #include "header.h"
 
 int main() {
-    test_4_sum();
+    test_spiral_matrix_II();
     return 0;
 }

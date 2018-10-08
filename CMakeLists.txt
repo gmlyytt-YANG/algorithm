@@ -114,4 +114,5 @@ add_executable(algorithm
         "leetcode/leetcode_417. Pacific Atlantic Water Flow.h"
         "leetcode/leetcode_241. Different Ways to Add Parentheses.h"
         "leetcode/leetcode_16. 3Sum Closest.h"
-        "leetcode/leetcode_18. 4Sum.h")
+        "leetcode/leetcode_18. 4Sum.h"
+        "leetcode/leetcode_59. Spiral Matrix II.h")
