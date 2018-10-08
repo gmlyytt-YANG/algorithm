@@ -112,4 +112,5 @@ add_executable(algorithm
         "sort/shell_sort.h"
         "leetcode/leetcode_116. Populating Next Right Pointers in Each Node.h"
         "leetcode/leetcode_417. Pacific Atlantic Water Flow.h"
-        "leetcode/leetcode_241. Different Ways to Add Parentheses.h")
+        "leetcode/leetcode_241. Different Ways to Add Parentheses.h"
+        "leetcode/leetcode_16. 3Sum Closest.h")

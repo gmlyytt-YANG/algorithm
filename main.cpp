@@ -1,6 +1,6 @@
 #include "header.h"
 
 int main() {
-    test_max_area();
+    test_three_sum_closest();
     return 0;
 }
