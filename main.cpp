@@ -1,6 +1,6 @@
 #include "header.h"
 
 int main() {
-    test_three_sum_closest();
+    test_4_sum();
     return 0;
 }
