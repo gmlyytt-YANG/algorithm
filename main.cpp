@@ -1,6 +1,6 @@
 #include "header.h"
 
 int main() {
-    test_spiral_matrix_II();
+    test_set_zeroes();
     return 0;
 }
