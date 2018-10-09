@@ -14,8 +14,7 @@
 #ifndef INC_1STPROGRAM_COMMON_18_COMBINATION_SUM_TO_M_H
 #define INC_1STPROGRAM_COMMON_18_COMBINATION_SUM_TO_M_H
 
-#include <iostream>
-#include <vector>
+#include "../util/header_util.h"
 
 using namespace std;
 

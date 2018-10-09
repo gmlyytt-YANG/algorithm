@@ -14,10 +14,9 @@
 #ifndef INC_1STPROGRAM_COMMON_23_MATRIX_ROUTE_GO_BACK_H
 #define INC_1STPROGRAM_COMMON_23_MATRIX_ROUTE_GO_BACK_H
 
-#include <iostream>
-#include <vector>
+#include "../util/header_util.h"
 
-int matrix_route(std::vector<std::vector<int>>& arr, int row, int col, int rows, int cols) {
+int matrix_route(std::vector<std::vector<int>> &arr, int row, int col, int rows, int cols) {
     if (row < 0 || row >= rows || col < 0 || col >= cols) {
         return -1;
     }

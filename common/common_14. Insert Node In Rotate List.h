@@ -14,8 +14,7 @@
 #ifndef INC_1STPROGRAM_COMMON_14_INSERT_NODE_IN_ROTATE_LIST_H
 #define INC_1STPROGRAM_COMMON_14_INSERT_NODE_IN_ROTATE_LIST_H
 
-#include <iostream>
-
+#include "../util/header_util.h"
 #include "../util/list_util.h"
 
 void insert_node_in_rotate_list(ListNode** p_head, int value) {

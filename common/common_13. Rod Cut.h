@@ -14,8 +14,7 @@
 #ifndef INC_1STPROGRAM_COMMON_13_ROD_CUT_H
 #define INC_1STPROGRAM_COMMON_13_ROD_CUT_H
 
-#include <iostream>
-#include <vector>
+#include "../util/header_util.h"
 
 int rod_cut(std::vector<int>& prices, int length) {
     if (prices.empty() || length <= 0) {

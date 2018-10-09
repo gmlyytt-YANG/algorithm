@@ -14,8 +14,7 @@
 #ifndef INC_1STPROGRAM_COMMON_17_BAG_0_1_H
 #define INC_1STPROGRAM_COMMON_17_BAG_0_1_H
 
-#include <iostream>
-#include <vector>
+#include "../util/header_util.h"
 
 using namespace std;
 

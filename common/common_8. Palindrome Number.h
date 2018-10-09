@@ -14,7 +14,7 @@
 #ifndef INC_1STPROGRAM_COMMON_8_PALINDROME_NUMBER_H
 #define INC_1STPROGRAM_COMMON_8_PALINDROME_NUMBER_H
 
-#include <iostream>
+#include "../util/header_util.h"
 
 bool number_palindrome(int value) {
     int base = 1;
@@ -38,4 +38,5 @@ void test_number_palindrome() {
     int value = 3456;
     std::cout << number_palindrome(value) << std::endl;
 }
+
 #endif //INC_1STPROGRAM_COMMON_8_PALINDROME_NUMBER_H

@@ -5,7 +5,7 @@
  ************************************************************************/
 
 /*
- * @file common_1. Specific Node in Binary Tree.h
+ * @file common_25. Binary Search Collections.h
  * @author gmlyytt@outlook.com
  * @date 2018/09/24 20:35:00
  * @brief 在数组中找到一个数插入的合适位置，比如[1,2,2,3,5,7], 2的插入位置为2(下标从0开始)
@@ -14,8 +14,7 @@
 #ifndef INC_1STPROGRAM_COMMON_25_SEARCH_BIGGEST_INSERT_POSITION_H
 #define INC_1STPROGRAM_COMMON_25_SEARCH_BIGGEST_INSERT_POSITION_H
 
-#include <iostream>
-#include <vector>
+#include "../util/header_util.h"
 
 /*
  * @brief 二分查找的迭代模式
@@ -24,7 +23,7 @@
  * @param num target
  * @return location
  */
-int binary_search_iterative(const std::vector<int>& arr, const int num) {
+int binary_search_iterative(const std::vector<int> &arr, const int num) {
     if (arr.empty()) {
         return -1;
     }
@@ -50,7 +49,7 @@ int binary_search_iterative(const std::vector<int>& arr, const int num) {
  * @param num target
  * @return location
  */
-int binary_search_recursive(const std::vector<int>& arr, const int num, int low, int high) {
+int binary_search_recursive(const std::vector<int> &arr, const int num, int low, int high) {
     if (arr.empty()) {
         return -1;
     }
@@ -58,9 +57,9 @@ int binary_search_recursive(const std::vector<int>& arr, const int num, int low,
     if (low <= high) {
         int mid = low + (high - low) / 2;
         if (arr[mid] > num) {
-            index = binary_search_recursive(arr, num, low, mid-1);
+            index = binary_search_recursive(arr, num, low, mid - 1);
         } else if (arr[mid] < num) {
-            index = binary_search_recursive(arr, num, mid+1, high);
+            index = binary_search_recursive(arr, num, mid + 1, high);
         } else {
             return mid;
         }
@@ -75,19 +74,19 @@ int binary_search_recursive(const std::vector<int>& arr, const int num, int low,
  * @param target
  * @return insert location
  */
-int insert_location_no_repeat(std::vector<int>& nums, int target){
-    if(nums.empty()){
+int insert_location_no_repeat(std::vector<int> &nums, int target) {
+    if (nums.empty()) {
         return -1;
     }
     int lo = 0;
     int hi = nums.size() - 1;
-    while(lo <= hi){
+    while (lo <= hi) {
         int mid = lo + (hi - lo) / 2;
-        if(nums[mid] == target){
+        if (nums[mid] == target) {
             return mid;
-        }else if(nums[mid] < target){
+        } else if (nums[mid] < target) {
             lo = mid + 1;
-        }else{
+        } else {
             hi = mid - 1;
         }
     }
@@ -101,11 +100,11 @@ int insert_location_no_repeat(std::vector<int>& nums, int target){
  * @param target
  * @return insert location
  */
-int last_inser_location_small_than(std::vector<int>& nums, int target) {
+int last_inser_location_small_than(std::vector<int> &nums, int target) {
     if (nums.empty()) {
         return -1;
     }
-    int low  = 0;
+    int low = 0;
     int high = nums.size() - 1;
     while (low <= high) {
         int mid = low + (high - low) / 2;
@@ -125,11 +124,11 @@ int last_inser_location_small_than(std::vector<int>& nums, int target) {
  * @param target
  * @return insert location
  */
-int last_insert_location_smaller_equal(std::vector<int>& nums, int target) {
+int last_insert_location_smaller_equal(std::vector<int> &nums, int target) {
     if (nums.empty()) {
         return -1;
     }
-    int low  = 0;
+    int low = 0;
     int high = nums.size() - 1;
     while (low <= high) {
         int mid = low + (high - low) / 2;
@@ -149,7 +148,7 @@ int last_insert_location_smaller_equal(std::vector<int>& nums, int target) {
  * @param target
  * @return element location
  */
-int first_element_location_equal(std::vector<int>& nums, int target) {
+int first_element_location_equal(std::vector<int> &nums, int target) {
     if (nums.empty()) {
         return -1;
     }
@@ -176,7 +175,7 @@ int first_element_location_equal(std::vector<int>& nums, int target) {
  * @param target
  * @return element location
  */
-int last_element_location_equal(std::vector<int>& nums, int target) {
+int last_element_location_equal(std::vector<int> &nums, int target) {
     if (nums.empty()) {
         return -1;
     }
@@ -203,7 +202,7 @@ int last_element_location_equal(std::vector<int>& nums, int target) {
  * @param target
  * @return insert location
  */
-int first_insert_location_larger(std::vector<int>& nums, int target) {
+int first_insert_location_larger(std::vector<int> &nums, int target) {
     if (nums.empty()) {
         return -1;
     }
@@ -227,7 +226,7 @@ int first_insert_location_larger(std::vector<int>& nums, int target) {
  * @param target
  * @return insert location
  */
-int first_insert_location_larger_equal(std::vector<int>& nums, int target) {
+int first_insert_location_larger_equal(std::vector<int> &nums, int target) {
     if (nums.empty()) {
         return -1;
     }
@@ -251,7 +250,7 @@ int first_insert_location_larger_equal(std::vector<int>& nums, int target) {
  * @param target
  * @return insert location
  */
-int last_insert_location_larger(std::vector<int>& nums, int target) {
+int last_insert_location_larger(std::vector<int> &nums, int target) {
     if (nums.empty()) {
         return -1;
     }
@@ -282,4 +281,5 @@ void test_binary_search() {
     std::cout << last_insert_location_larger(nums_5, target) << std::endl;
 
 }
+
 #endif //INC_1STPROGRAM_COMMON_25_SEARCH_BIGGEST_INSERT_POSITION_H

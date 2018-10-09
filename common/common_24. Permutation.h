@@ -14,15 +14,14 @@
 #ifndef INC_1STPROGRAM_COMMON_24_PERMUTATION_H
 #define INC_1STPROGRAM_COMMON_24_PERMUTATION_H
 
-#include <iostream>
-#include <vector>
+#include "../util/header_util.h"
 
-bool judge(std::vector<int>& temp, int k) {
+bool judge(std::vector<int> &temp, int k) {
     if (temp.empty()) {
         return false;
     }
     long long result = 1;
-    for (auto& elem : temp) {
+    for (auto &elem : temp) {
         result *= elem;
     }
     if (result < k) {
@@ -38,7 +37,7 @@ void core(std::vector<int> &arr, std::vector<int> &temp, int start, int &count, 
     for (int i = start; i < arr.size(); ++i) {
         temp.push_back(arr[i]);
         core(arr, temp, i + 1, count, k);
-        for (auto & elem : temp) {
+        for (auto &elem : temp) {
             std::cout << elem << " ";
         }
         std::cout << std::endl;
@@ -49,7 +48,7 @@ void core(std::vector<int> &arr, std::vector<int> &temp, int start, int &count, 
     }
 }
 
-int numSubsetProductLessThanK(std::vector<int>& nums, int k) {
+int numSubsetProductLessThanK(std::vector<int> &nums, int k) {
     if (nums.empty()) {
         return 0;
     }

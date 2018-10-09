@@ -15,9 +15,9 @@
 #ifndef INC_1STPROGRAM_COMMON_21_DELETE_COMMA_H
 #define INC_1STPROGRAM_COMMON_21_DELETE_COMMA_H
 
-#include <iostream>
+#include "../util/header_util.h"
 
-void move_string_part(std::string& str, int start, int end) {
+void move_string_part(std::string &str, int start, int end) {
     if (start < str.size() && end >= 0 && start > end) {
         for (int i = start; i < str.size(); ++i) {
             str[end++] = str[i];
@@ -47,7 +47,7 @@ void delete_comma(std::string &str) {
         if (start_comma > end_comma && (start_comma != start_temp || end_comma != end_temp)) {
             move_string_part(str, start_comma, end_comma);
             std::cout << start_comma << " " << end_comma << " " << str << std::endl;
-            comma_count += start_comma-end_comma;
+            comma_count += start_comma - end_comma;
         }
     }
     std::cout << comma_count << std::endl;

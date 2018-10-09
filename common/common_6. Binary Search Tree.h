@@ -14,17 +14,18 @@
 #ifndef INC_1STPROGRAM_COMMON_6_BINARY_SEARCH_TREE_H
 #define INC_1STPROGRAM_COMMON_6_BINARY_SEARCH_TREE_H
 
-#include <iostream>
+#include "../util/header_util.h"
 #include "../util/tree_util.h"
 
 struct BinaryTreeNode {
     int value;
-    BinaryTreeNode* left;
-    BinaryTreeNode* right;
+    BinaryTreeNode *left;
+    BinaryTreeNode *right;
+
     BinaryTreeNode(int val) : value(val), left(nullptr), right(nullptr) {};
 };
 
-void insert_node(BinaryTreeNode*& root, const int value) {
+void insert_node(BinaryTreeNode *&root, const int value) {
     if (!root) {
         root = new BinaryTreeNode(value);
         return;
@@ -38,16 +39,16 @@ void insert_node(BinaryTreeNode*& root, const int value) {
     }
 }
 
-BinaryTreeNode* build_tree() {
+BinaryTreeNode *build_tree() {
     int elem = 0;
-    BinaryTreeNode* root = nullptr;
+    BinaryTreeNode *root = nullptr;
     while (std::cin >> elem) {
         insert_node(root, elem);
     }
     return root;
 }
 
-void delete_tree(BinaryTreeNode*& root) {
+void delete_tree(BinaryTreeNode *&root) {
     if (root->left) {
         delete_tree(root->left);
     } else if (root->right) {
@@ -57,7 +58,7 @@ void delete_tree(BinaryTreeNode*& root) {
     root = nullptr;
 }
 
-bool binary_search_tree_recursive(BinaryTreeNode* root, const int value) {
+bool binary_search_tree_recursive(BinaryTreeNode *root, const int value) {
     if (!root) {
         return false;
     }
@@ -72,7 +73,7 @@ bool binary_search_tree_recursive(BinaryTreeNode* root, const int value) {
     return found;
 }
 
-BinaryTreeNode* binary_search_tree_iterative(BinaryTreeNode* root, const int value) {
+BinaryTreeNode *binary_search_tree_iterative(BinaryTreeNode *root, const int value) {
     bool found = false;
     while (root) {
         if (root->value == value) {
@@ -88,10 +89,11 @@ BinaryTreeNode* binary_search_tree_iterative(BinaryTreeNode* root, const int val
 }
 
 void test_binary_search_tree() {
-    BinaryTreeNode* root = build_tree();
+    BinaryTreeNode *root = build_tree();
     int value = 2;
     bool result = binary_search_tree_recursive(root, value);
-    BinaryTreeNode* result_node = binary_search_tree_iterative(root, value);
+    BinaryTreeNode *result_node = binary_search_tree_iterative(root, value);
     delete_tree(root);
 }
+
 #endif //INC_1STPROGRAM_COMMON_6_BINARY_SEARCH_TREE_H

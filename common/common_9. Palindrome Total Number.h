@@ -14,11 +14,11 @@
 #ifndef INC_1STPROGRAM_COMMON_9_PALINDROME_NUMBER_H
 #define INC_1STPROGRAM_COMMON_9_PALINDROME_NUMBER_H
 
-#include <iostream>
+#include "../util/header_util.h"
 
-int palindrome(const std::string& str, int left, int right) {
+int palindrome(const std::string &str, int left, int right) {
     int count = 0;
-    while (left >=0 && right < str.size() && str[left] == str[right]) {
+    while (left >= 0 && right < str.size() && str[left] == str[right]) {
         ++count;
         --left;
         ++right;
@@ -26,7 +26,7 @@ int palindrome(const std::string& str, int left, int right) {
     return count;
 }
 
-int palindrome_totoal_number(const std::string& str) {
+int palindrome_totoal_number(const std::string &str) {
     if (str.empty()) {
         return 0;
     }
@@ -42,4 +42,5 @@ void test_palindrome_totoal_number() {
     std::string str = "abbacbcabdad";
     std::cout << palindrome_totoal_number(str) << std::endl;
 }
+
 #endif //INC_1STPROGRAM_COMMON_9_PALINDROME_NUMBER_H

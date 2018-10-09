@@ -14,9 +14,7 @@
 #ifndef INC_1STPROGRAM_COMMON_22_SUBSEQUENCE_H
 #define INC_1STPROGRAM_COMMON_22_SUBSEQUENCE_H
 
-#include <iostream>
-#include <algorithm>
-#include <vector>
+#include "../util/header_util.h"
 
 /*
  * @brief 数组的最小连续子数组之和

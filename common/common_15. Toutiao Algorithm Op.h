@@ -14,10 +14,9 @@
 #ifndef INC_1STPROGRAM_COMMON_15_ALGORITHM_OP_TOUTIAO_H
 #define INC_1STPROGRAM_COMMON_15_ALGORITHM_OP_TOUTIAO_H
 
-#include <iostream>
-#include <vector>
+#include "../util/header_util.h"
 
-double ori(std::vector<double>& arr) {
+double ori(std::vector<double> &arr) {
     double result = 0.0;
     double num = arr.size();
     for (int i = 0; i < num; ++i) {
@@ -28,7 +27,7 @@ double ori(std::vector<double>& arr) {
     return result;
 }
 
-double opt1(std::vector<double>& arr) {
+double opt1(std::vector<double> &arr) {
     double result = 0.0;
     double temp_result = 0.0;
     double num = arr.size();
@@ -39,7 +38,7 @@ double opt1(std::vector<double>& arr) {
     for (int i = 1; i < num; ++i) {
         if (arr[i] > arr[0]) {
             result += temp_result * (num - 1);
-        } else if (arr[i] < arr[0]){
+        } else if (arr[i] < arr[0]) {
             result -= temp_result * (num - 1);
         }
     }
@@ -51,4 +50,5 @@ void test_algorithm_opt() {
     double result = ori(arr);
     double result_2 = opt1(arr);
 }
+
 #endif //INC_1STPROGRAM_COMMON_15_ALGORITHM_OP_TOUTIAO_H

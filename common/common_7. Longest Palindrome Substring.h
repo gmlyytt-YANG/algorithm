@@ -14,9 +14,9 @@
 #ifndef INC_1STPROGRAM_COMMON_7_LONGEST_PALINDROME_SUBSTRING_H
 #define INC_1STPROGRAM_COMMON_7_LONGEST_PALINDROME_SUBSTRING_H
 
-#include <iostream>
+#include "../util/header_util.h"
 
-int palindrome_str_length(const std::string& str, int left, int right, std::string& result) {
+int palindrome_str_length(const std::string &str, int left, int right, std::string &result) {
     while (left >= 0 && right < str.size() && str[left] == str[right]) {
         --left;
         ++right;
@@ -25,7 +25,7 @@ int palindrome_str_length(const std::string& str, int left, int right, std::stri
     return right - left - 1;
 }
 
-std::string longest_palindrome_substring(const std::string& str) {
+std::string longest_palindrome_substring(const std::string &str) {
     if (str.empty()) {
         return "";
     }
@@ -53,4 +53,5 @@ void test_longest_palindrome_substring() {
     std::string result = longest_palindrome_substring(str);
 
 }
+
 #endif //INC_1STPROGRAM_COMMON_7_LONGEST_PALINDROME_SUBSTRING_H

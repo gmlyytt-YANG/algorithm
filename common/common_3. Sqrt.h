@@ -14,7 +14,7 @@
 #ifndef INC_1STPROGRAM_COMMON_3_SQRT_H
 #define INC_1STPROGRAM_COMMON_3_SQRT_H
 
-#include <iostream>
+#include "../util/header_util.h"
 
 const float eps = 1e-12;
 

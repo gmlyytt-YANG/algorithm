@@ -15,10 +15,9 @@
 #ifndef INC_1STPROGRAM_COMMON_19_LONGEST_COMMON_SUBSTRING_H
 #define INC_1STPROGRAM_COMMON_19_LONGEST_COMMON_SUBSTRING_H
 
-#include <iostream>
-#include <vector>
+#include "../util/header_util.h"
 
-int longest_common_substring(std::string& str1, std::string& str2) {
+int longest_common_substring(std::string &str1, std::string &str2) {
     if (str1.empty() || str2.empty()) {
         return 0;
     }
@@ -49,7 +48,7 @@ int longest_common_substring(std::string& str1, std::string& str2) {
     return max;
 }
 
-int longest_common_subsequence(std::string& str1, std::string& str2) {
+int longest_common_subsequence(std::string &str1, std::string &str2) {
     if (str1.empty() || str2.empty()) {
         return 0;
     }
@@ -78,4 +77,5 @@ void test_lcs() {
     std::cout << longest_common_substring(a, b) << std::endl;
     std::cout << longest_common_subsequence(a, b) << std::endl;
 }
+
 #endif //INC_1STPROGRAM_COMMON_19_LONGEST_COMMON_SUBSTRING_H

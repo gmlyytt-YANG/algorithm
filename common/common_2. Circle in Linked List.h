@@ -14,7 +14,7 @@
 #ifndef INC_1STPROGRAM_COMMON_2_CIRCLE_IN_LINKED_LIST_H
 #define INC_1STPROGRAM_COMMON_2_CIRCLE_IN_LINKED_LIST_H
 
-#include <iostream>
+#include "../util/header_util.h"
 #include "../util/list_util.h"
 
 ListNode* circle_in_list(ListNode* head) {

@@ -14,8 +14,7 @@
 #ifndef INC_1STPROGRAM_COMMON_11_BIG_NUMBER_MULTIPLY_H
 #define INC_1STPROGRAM_COMMON_11_BIG_NUMBER_MULTIPLY_H
 
-#include <iostream>
-#include <vector>
+#include "../util/header_util.h"
 
 void multiply(std::vector<int>& arr1, std::vector<int>& arr2, std::vector<int>& result) {
     if (arr1.empty() || arr2.empty()) {

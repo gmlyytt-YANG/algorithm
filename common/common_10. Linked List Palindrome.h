@@ -15,16 +15,16 @@
 #ifndef INC_1STPROGRAM_COMMON_10_LINKED_LIST_PALINDROME_H
 #define INC_1STPROGRAM_COMMON_10_LINKED_LIST_PALINDROME_H
 
-#include <iostream>
+#include "../util/header_util.h"
 #include "../util/list_util.h"
 
-ListNode* reverse_list(ListNode* head) {
+ListNode *reverse_list(ListNode *head) {
     if (!head || !(head->next)) {
         return head;
     }
-    ListNode* node = head;
+    ListNode *node = head;
     while (node->next) {
-        ListNode* node_next = node->next;
+        ListNode *node_next = node->next;
         node->next = node_next->next;
         node_next->next = head;
         head = node_next;
@@ -32,12 +32,12 @@ ListNode* reverse_list(ListNode* head) {
     return head;
 }
 
-bool palindrome(ListNode* head) {
+bool palindrome(ListNode *head) {
     if (!head || !(head->next)) {
         return false;
     }
-    ListNode* slow = head;
-    ListNode* fast = head;
+    ListNode *slow = head;
+    ListNode *fast = head;
     while (fast->next && fast->next->next) {
         slow = slow->next;
         fast = fast->next->next;
@@ -56,7 +56,8 @@ bool palindrome(ListNode* head) {
 
 void test_palindrome() {
     std::vector<int> arr = {1, 2, 2, 1};
-    ListNode* head = create_list(arr);
+    ListNode *head = create_list(arr);
     std::cout << palindrome(head) << std::endl;
 }
+
 #endif //INC_1STPROGRAM_COMMON_10_LINKED_LIST_PALINDROME_H

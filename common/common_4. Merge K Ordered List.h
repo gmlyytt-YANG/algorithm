@@ -14,29 +14,25 @@
 #ifndef INC_1STPROGRAM_COMMON_4_MERGE_K_ORDERED_LIST_H
 #define INC_1STPROGRAM_COMMON_4_MERGE_K_ORDERED_LIST_H
 
-#include <algorithm>
-#include <iostream>
-#include <queue>
-#include <vector>
-
+#include "../util/header_util.h"
 #include "../util/list_util.h"
 
 //bool cmp(const ListNode*& lhs, const ListNode*& rhs) {
 //    return lhs->value < rhs->value;
 //}
 
-ListNode* merge_K_ordered_list(std::vector<ListNode*> list_table) {
+ListNode *merge_K_ordered_list(std::vector<ListNode *> list_table) {
     if (list_table.empty()) {
         return nullptr;
     }
-    std::priority_queue<ListNode*, std::vector<ListNode*>, cmp> pq;
-    for (auto& elem: list_table) {
+    std::priority_queue<ListNode *, std::vector<ListNode *>, cmp> pq;
+    for (auto &elem: list_table) {
         pq.push(elem);
     }
-    ListNode* head = nullptr;
-    ListNode* pre_node = nullptr;
+    ListNode *head = nullptr;
+    ListNode *pre_node = nullptr;
     while (!pq.empty()) {
-        ListNode* node = pq.top();
+        ListNode *node = pq.top();
         pq.pop();
         if (node->next) {
             pq.push(node->next);
@@ -52,16 +48,16 @@ ListNode* merge_K_ordered_list(std::vector<ListNode*> list_table) {
 }
 
 void test_merge_K_ordered_list() {
-    std::vector<int> arr_1 = {2,2,3,4};
-    std::vector<int> arr_2 = {1,5,6,7};
-    std::vector<int> arr_3 = {8,9,10,11};
+    std::vector<int> arr_1 = {2, 2, 3, 4};
+    std::vector<int> arr_2 = {1, 5, 6, 7};
+    std::vector<int> arr_3 = {8, 9, 10, 11};
     std::vector<int> arr_4 = {11, 12, 13, 14};
-    ListNode* head1 = create_list(arr_1);
-    ListNode* head2 = create_list(arr_2);
-    ListNode* head3 = create_list(arr_3);
-    ListNode* head4 = create_list(arr_4);
-    std::vector<ListNode*> list_table = {head1, head2, head3, head4};
-    ListNode* result = merge_K_ordered_list(list_table);
+    ListNode *head1 = create_list(arr_1);
+    ListNode *head2 = create_list(arr_2);
+    ListNode *head3 = create_list(arr_3);
+    ListNode *head4 = create_list(arr_4);
+    std::vector<ListNode *> list_table = {head1, head2, head3, head4};
+    ListNode *result = merge_K_ordered_list(list_table);
 
 }
 
