@@ -1,6 +1,6 @@
 #include "header.h"
 
 int main() {
-    test_set_zeroes();
+    test_left_rotate_string();
     return 0;
 }

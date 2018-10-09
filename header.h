@@ -14,6 +14,6 @@
 #ifndef INC_1STPROGRAM_HEADER_H
 #define INC_1STPROGRAM_HEADER_H
 
-#include "leetcode/leetcode_73. Set Matrix Zeroes.h"
+#include "offer/offer_58. Left Rotate String.h"
 
 #endif //INC_1STPROGRAM_HEADER_H

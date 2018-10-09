@@ -9,4 +9,5 @@ add_executable(algorithm
         util/tree_util.h util/tree_util.cpp
         util/list_util.h util/list_util.cpp
         util/header_util.h
+        "offer/offer_58. Left Rotate String.h"
         "leetcode/leetcode_73. Set Matrix Zeroes.h")
