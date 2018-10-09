@@ -1,20 +1,26 @@
-// Created by Li,Yang(Duer04) on 2018/8/29.
-// Author: liyang
-//
-// 给你一根长度为n绳子，请把绳子剪成m段（m、n都是整数，n>1并且m≥1）。
-// 每段的绳子的长度记为k[0]、k[1]、……、k[m]。k[0]*k[1]*…*k[m]可能的最大乘积是多少
+/*************************************************************************
+ *
+ * Copyright (c) 2018 liyang. All Rights Reserved
+ *
+ ************************************************************************/
+
+/*
+ * @file offer_14. Cut Rope.h
+ * @author gmlyytt@outlook.com
+ * @date 2018/08/29 10:29:00
+ * @brief 剑指offer第14题 剪绳子
+ * */
 
 #ifndef INC_1STPROGRAM_OFFER_14_CUT_ROPE_H
 #define INC_1STPROGRAM_OFFER_14_CUT_ROPE_H
 
-#include <iostream>
-#include <vector>
+#include "../util/header_util.h"
 
 int cut_rope(int n) {
     if (n <= 0) {
         return 0;
     }
-    std::vector<int> dp(n+1, 0);
+    std::vector<int> dp(n + 1, 0);
     int Max = INT_MIN;
     dp[0] = 0;
     dp[1] = 1;
@@ -38,4 +44,5 @@ void test_cut_rope() {
     std::cout << cut_rope(num) << std::endl;
 
 }
+
 #endif //INC_1STPROGRAM_OFFER_14_CUT_ROPE_H

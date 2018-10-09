@@ -1,14 +1,20 @@
-// Created by Li,Yang(Duer04) on 2018/8/15.
-// Author: liyang
-//
-// 两个栈实现队列
+/*************************************************************************
+ *
+ * Copyright (c) 2018 liyang. All Rights Reserved
+ *
+ ************************************************************************/
+
+/*
+ * @file offer_9. Two Stack Queue.h
+ * @author gmlyytt@outlook.com
+ * @date 2018/08/15 10:29:00
+ * @brief 剑指offer第9题 两个栈实现队列
+ * */
 
 #ifndef INC_1STPROGRAM_OFFER_9_TWO_STACK_QUEUE_H
 #define INC_1STPROGRAM_OFFER_9_TWO_STACK_QUEUE_H
 
-#include <iostream>
-#include <stack>
-#include <vector>
+#include "../util/header_util.h"
 
 class SelfQueue {
 public:

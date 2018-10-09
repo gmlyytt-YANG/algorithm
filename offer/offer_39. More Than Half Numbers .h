@@ -1,15 +1,22 @@
-// Created by Li,Yang(Duer04) on 2018/8/16.
-// Author: liyang
-//
-// 数组中频率超过数组长度一半的数字
+/*************************************************************************
+ *
+ * Copyright (c) 2018 liyang. All Rights Reserved
+ *
+ ************************************************************************/
+
+/*
+ * @file offer_39. More Than Half Numbers .h
+ * @author gmlyytt@outlook.com
+ * @date 2018/08/16 10:29:00
+ * @brief 剑指offer第39题 数组中频率超过数组长度一半的数字
+* */
 
 #ifndef INC_1STPROGRAM_OFFER_39_MORE_THAN_HALF_NUMBERS_H
 #define INC_1STPROGRAM_OFFER_39_MORE_THAN_HALF_NUMBERS_H
 
-#include <iostream>
-#include <vector>
+#include "../util/header_util.h"
 
-int partion(std::vector<int>& arr, int start, int end) {
+int partion(std::vector<int> &arr, int start, int end) {
     if (start > end) {
         std::cout << "invalid input" << std::endl;
         exit(-1);
@@ -25,9 +32,9 @@ int partion(std::vector<int>& arr, int start, int end) {
     return i + 1;
 }
 
-bool check_more_than_half(std::vector<int>& arr, int num) {
+bool check_more_than_half(std::vector<int> &arr, int num) {
     int count = 0;
-    for (auto& elem : arr) {
+    for (auto &elem : arr) {
         if (num == elem) {
             ++count;
         }
@@ -38,7 +45,7 @@ bool check_more_than_half(std::vector<int>& arr, int num) {
     return false;
 }
 
-int more_than_half(std::vector<int>& arr) {
+int more_than_half(std::vector<int> &arr) {
     if (arr.empty()) {
         std::cout << "invalid input" << std::endl;
         exit(-1);
@@ -65,7 +72,7 @@ int more_than_half(std::vector<int>& arr) {
     }
 }
 
-int more_than_half_2(std::vector<int>& arr) {
+int more_than_half_2(std::vector<int> &arr) {
     if (arr.empty()) {
         exit(-1);
     }
@@ -93,4 +100,5 @@ void test_more_than_half() {
     std::vector<int> arr = {1, 5, 5, 5, 2};
     int result = more_than_half(arr);
 }
+
 #endif //INC_1STPROGRAM_OFFER_39_MORE_THAN_HALF_NUMBERS_H

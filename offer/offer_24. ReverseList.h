@@ -1,10 +1,20 @@
-//
-// Created by Li,Yang(Duer04) on 2018/7/24.
-//
+/*************************************************************************
+ *
+ * Copyright (c) 2018 liyang. All Rights Reserved
+ *
+ ************************************************************************/
+
+/*
+ * @file offer_24. ReverseList.h
+ * @author gmlyytt@outlook.com
+ * @date 2018/07/24 10:29:00
+ * @brief 剑指offer第24题 翻转链表
+ * */
 
 #ifndef INC_1STPROGRAM_OFFER_24_REVERSELIST_H
 #define INC_1STPROGRAM_OFFER_24_REVERSELIST_H
 
+#include "../util/header_util.h"
 #include "../util/list_util.h"
 
 ListNode* ReverseList(ListNode* pNode) {

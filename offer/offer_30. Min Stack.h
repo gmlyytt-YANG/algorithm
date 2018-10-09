@@ -1,13 +1,20 @@
-// Created by Li,Yang(Duer04) on 2018/8/16.
-// Author: liyang
-//
-// 包含min函数的栈
+/*************************************************************************
+ *
+ * Copyright (c) 2018 liyang. All Rights Reserved
+ *
+ ************************************************************************/
+
+/*
+ * @file offer_30. Min Stack.h
+ * @author gmlyytt@outlook.com
+ * @date 2018/08/16 10:29:00
+ * @brief 剑指offer第30题 包含min函数的栈
+ * */
 
 #ifndef INC_1STPROGRAM_OFFER_30_MIN_STACK_H
 #define INC_1STPROGRAM_OFFER_30_MIN_STACK_H
 
-#include <iostream>
-#include <stack>
+#include "../util/header_util.h"
 
 class MinStack {
 public:
@@ -35,7 +42,7 @@ private:
 };
 
 void test_min_stack() {
-    MinStack* stk = new MinStack();
+    MinStack *stk = new MinStack();
     stk->push(5);
     stk->push(2);
     stk->push(1);
@@ -49,4 +56,5 @@ void test_min_stack() {
     std::cout << stk->min() << std::endl;
 
 }
+
 #endif //INC_1STPROGRAM_OFFER_30_MIN_STACK_H

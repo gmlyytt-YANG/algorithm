@@ -1,13 +1,20 @@
-// Created by Li,Yang(Duer04) on 2018/8/15.
-// Author: liyang
-//
-// 二进制数中1的个数
+/*************************************************************************
+ *
+ * Copyright (c) 2018 liyang. All Rights Reserved
+ *
+ ************************************************************************/
+
+/*
+ * @file offer_15. Number Of 1s.h
+ * @author gmlyytt@outlook.com
+ * @date 2018/08/15 10:29:00
+ * @brief 剑指offer第15题 二进制数中1的个数
+ * */
 
 #ifndef INC_1STPROGRAM_OFFER_15_NUMBER_OF_1S_H
 #define INC_1STPROGRAM_OFFER_15_NUMBER_OF_1S_H
 
-#include <iostream>
-#include <unordered_set>
+#include "../util/header_util.h"
 
 int number_of_1s(int value) {
     int count = 0;

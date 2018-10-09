@@ -1,13 +1,20 @@
-// Created by Li,Yang(Duer04) on 2018/8/29.
-// Author: liyang
-//
-// 机器人的运动范围
+/*************************************************************************
+ *
+ * Copyright (c) 2018 liyang. All Rights Reserved
+ *
+ ************************************************************************/
+
+/*
+ * @file offer_13. Range Of Robot.h
+ * @author gmlyytt@outlook.com
+ * @date 2018/08/29 10:29:00
+ * @brief 剑指offer第13题 机器人的运动范围
+ * */
 
 #ifndef INC_1STPROGRAM_OFFER_13_RANGE_OF_ROBOT_H
 #define INC_1STPROGRAM_OFFER_13_RANGE_OF_ROBOT_H
 
-#include <iostream>
-#include <vector>
+#include "../util/header_util.h"
 
 int count(int row, int col) {
     int count = 0;
@@ -23,13 +30,13 @@ int count(int row, int col) {
 }
 
 int robot_range_core(int threshold, int m, int n,
-        int row, int col, std::vector<vector<bool>>& visited) {
-    if (row > m - 1 || col > n - 1|| count(row, col) > threshold || visited[row][col]) {
+                     int row, int col, std::vector<vector<bool>> &visited) {
+    if (row > m - 1 || col > n - 1 || count(row, col) > threshold || visited[row][col]) {
         return 0;
     }
     visited[row][col] = true;
     return 1 + robot_range_core(threshold, m, n, row, col + 1, visited)
-             + robot_range_core(threshold, m, n, row + 1, col, visited);
+           + robot_range_core(threshold, m, n, row + 1, col, visited);
 }
 
 int robot_range(int threshold, int m, int n) {
@@ -49,4 +56,5 @@ void test_robot_range() {
     int threshold = 15;
     int result = robot_range(threshold, m, n);
 }
+
 #endif //INC_1STPROGRAM_OFFER_13_RANGE_OF_ROBOT_H

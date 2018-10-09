@@ -1,15 +1,22 @@
-// Created by Administrator on 2018/9/12.
-// Author: liyang
-//
-// 打印1到n位数的最大值
+/*************************************************************************
+ *
+ * Copyright (c) 2018 liyang. All Rights Reserved
+ *
+ ************************************************************************/
+
+/*
+ * @file offer_17. 1 To N Print.h
+ * @author gmlyytt@outlook.com
+ * @date 2018/09/12 10:29:00
+ * @brief 剑指offer第17题 打印1到n位数的最大值
+ * */
 
 #ifndef INC_1STPROGRAM_OFFER_17_1_TO_N_PRINT_H
 #define INC_1STPROGRAM_OFFER_17_1_TO_N_PRINT_H
 
-#include <iostream>
-#include <vector>
+#include "../util/header_util.h"
 
-bool increament(std::string& number) {
+bool increament(std::string &number) {
     int length = number.size();
     int take_over = 0;
     bool is_over_flow = false;
@@ -35,7 +42,7 @@ bool increament(std::string& number) {
     return is_over_flow;
 }
 
-void print_number(std::string& number) {
+void print_number(std::string &number) {
     bool is_begin_0 = true;
     for (char i : number) {
         if (is_begin_0 && i != '0') {
@@ -55,4 +62,5 @@ void test_increament() {
         print_number(number);
     }
 }
+
 #endif //INC_1STPROGRAM_OFFER_17_1_TO_N_PRINT_H

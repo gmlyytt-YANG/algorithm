@@ -1,38 +1,22 @@
-// Created by Li,Yang(Duer04) on 2018/8/16.
-// Author: liyang
-//
-// 栈的压入和弹出序列
+/*************************************************************************
+ *
+ * Copyright (c) 2018 liyang. All Rights Reserved
+ *
+ ************************************************************************/
+
+/*
+ * @file offer_31. Pop And Push .h
+ * @author gmlyytt@outlook.com
+ * @date 2018/08/16 10:29:00
+ * @brief 剑指offer第31题 栈的压入和弹出序列
+ * */
 
 #ifndef INC_1STPROGRAM_OFFER_31_POP_AND_PUSH_H
 #define INC_1STPROGRAM_OFFER_31_POP_AND_PUSH_H
 
-#include <iostream>
-#include <stack>
-#include <vector>
+#include "../util/header_util.h"
 
-//bool pop_and_push(std::vector<int>& arr1, std::vector<int>& arr2) {
-//    int length1 = arr1.size();
-//    int length2 = arr2.size();
-//    if (!length1 || !length2 || length1 != length2) {
-//        return false;
-//    }
-//    int i = 0;
-//    int j = 0;
-//    std::stack<int> stk;
-//    while (j < length1) {
-//        while (stk.empty() || (i < length1 && stk.top() != arr2[j])) {
-//            stk.push(arr1[i]);
-//            ++i;
-//        }
-//        stk.pop();
-//        ++j;
-//    }
-//    if (j == length1 && stk.empty()) {
-//        return true;
-//    }
-//}
-
-bool IsPopOrder(std::vector<int> pushV,std::vector<int> popV) {
+bool IsPopOrder(std::vector<int> pushV, std::vector<int> popV) {
     if (!pushV.empty() && !popV.empty() && popV.size() == pushV.size()) {
         std::stack<int> stk;
         int push_index = 0;
@@ -58,4 +42,5 @@ void test_pop_and_push() {
     std::vector<int> arr2 = {3, 2, 1, 5, 4};
     std::cout << IsPopOrder(arr1, arr2) << std::endl;
 }
+
 #endif //INC_1STPROGRAM_OFFER_31_POP_AND_PUSH_H

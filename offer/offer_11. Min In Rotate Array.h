@@ -1,17 +1,22 @@
-// Created by Li,Yang(Duer04) on 2018/8/9.
-// Author: liyang
-//
-// 旋转数组的最小值
+/*************************************************************************
+ *
+ * Copyright (c) 2018 liyang. All Rights Reserved
+ *
+ ************************************************************************/
+
+/*
+ * @file offer_11. Min In Rotate Array.h
+ * @author gmlyytt@outlook.com
+ * @date 2018/08/09 10:29:00
+ * @brief 剑指offer第11题 旋转数组的最小值
+ * */
 
 #ifndef INC_1STPROGRAM_OFFER_11_MIN_IN_ROTATE_ARRAY_H
 #define INC_1STPROGRAM_OFFER_11_MIN_IN_ROTATE_ARRAY_H
 
-#include <iostream>
-#include <vector>
-#include <exception>
-#include <cstdio>
+#include "../util/header_util.h"
 
-int min(std::vector<int>& arr, int low, int high) {
+int min(std::vector<int> &arr, int low, int high) {
     if (low > high) {
         exit(-1);
     }
@@ -24,9 +29,9 @@ int min(std::vector<int>& arr, int low, int high) {
     return result;
 }
 
-int min_inorder(std::vector<int>& arr) {
+int min_inorder(std::vector<int> &arr) {
     if (arr.empty()) {
-        exit(-1);
+        return -1;
     }
     int low = 0;
     int high = arr.size() - 1;
@@ -43,8 +48,7 @@ int min_inorder(std::vector<int>& arr) {
         }
         if (arr[low] <= arr[mid]) {
             low = mid;
-        }
-        else if (arr[high] >= arr[mid]) {
+        } else if (arr[high] >= arr[mid]) {
             high = mid;
         }
     }
@@ -57,4 +61,5 @@ void test_min_inorder() {
     int result = min_inorder(arr2);
     std::cout << result << std::endl;
 }
+
 #endif //INC_1STPROGRAM_OFFER_11_MIN_IN_ROTATE_ARRAY_H

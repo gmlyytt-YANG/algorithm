@@ -1,15 +1,23 @@
-// Created by Li,Yang(Duer04) on 2018/8/15.
-// Author: liyang
-//
-// 树的子结构
+/*************************************************************************
+ *
+ * Copyright (c) 2018 liyang. All Rights Reserved
+ *
+ ************************************************************************/
+
+/*
+ * @file offer_26. Sub Tree.h
+ * @author gmlyytt@outlook.com
+ * @date 2018/08/15 10:29:00
+ * @brief 剑指offer第26题 树的子结构
+ * */
 
 #ifndef INC_1STPROGRAM_OFFER_26_SUB_TREE_H
 #define INC_1STPROGRAM_OFFER_26_SUB_TREE_H
 
-#include <iostream>
+#include "../util/header_util.h"
 #include "../util/tree_util.h"
 
-bool sub_tree_for_same_root(TreeNode* root1, TreeNode* root2) {
+bool sub_tree_for_same_root(TreeNode *root1, TreeNode *root2) {
     if (root2 == nullptr) {
         return true;
     }
@@ -23,7 +31,7 @@ bool sub_tree_for_same_root(TreeNode* root1, TreeNode* root2) {
            sub_tree_for_same_root(root1->right, root2->right);
 }
 
-bool sub_tree(TreeNode* root1, TreeNode* root2) {
+bool sub_tree(TreeNode *root1, TreeNode *root2) {
     bool is_sub = false;
     if (root1 && root2) {
         is_sub = sub_tree_for_same_root(root1, root2);
@@ -38,23 +46,24 @@ bool sub_tree(TreeNode* root1, TreeNode* root2) {
 }
 
 void test_sub_tree() {
-    TreeNode* node1 = new TreeNode(1);
-    TreeNode* node2 = new TreeNode(2);
-    TreeNode* node3 = new TreeNode(3);
-    TreeNode* node4 = new TreeNode(4);
-    TreeNode* node5 = new TreeNode(5);
-    TreeNode* node6 = new TreeNode(6);
-    TreeNode* node7 = new TreeNode(7);
+    TreeNode *node1 = new TreeNode(1);
+    TreeNode *node2 = new TreeNode(2);
+    TreeNode *node3 = new TreeNode(3);
+    TreeNode *node4 = new TreeNode(4);
+    TreeNode *node5 = new TreeNode(5);
+    TreeNode *node6 = new TreeNode(6);
+    TreeNode *node7 = new TreeNode(7);
 
     connect_tree_node(node1, node2, node3);
     connect_tree_node(node2, node4, node5);
     connect_tree_node(node3, node6, node7);
 
-    TreeNode* node31 = new TreeNode(3);
-    TreeNode* node61 = new TreeNode(6);
-    TreeNode* node71 = new TreeNode(7);
+    TreeNode *node31 = new TreeNode(3);
+    TreeNode *node61 = new TreeNode(6);
+    TreeNode *node71 = new TreeNode(7);
     connect_tree_node(node31, node61, node71);
 
     std::cout << sub_tree(node1, node31) << std::endl;
 }
+
 #endif //INC_1STPROGRAM_OFFER_26_SUB_TREE_H

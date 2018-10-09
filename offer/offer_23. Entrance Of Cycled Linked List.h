@@ -1,24 +1,31 @@
-// Created by Li,Yang(Duer04) on 2018/8/21.
-// Author: liyang
-//
-// 链表的入口节点
+/*************************************************************************
+ *
+ * Copyright (c) 2018 liyang. All Rights Reserved
+ *
+ ************************************************************************/
+
+/*
+ * @file offer_23. Entrance Of Cycled Linked List.h
+ * @author gmlyytt@outlook.com
+ * @date 2018/08/21 10:29:00
+ * @brief 剑指offer第23题 链表的入口节点
+ * */
 
 #ifndef INC_1STPROGRAM_OFFER_23_ENTRANCE_OF_CYCLED_LINKED_LIST_H
 #define INC_1STPROGRAM_OFFER_23_ENTRANCE_OF_CYCLED_LINKED_LIST_H
 
-#include <iostream>
-
+#include "../util/header_util.h"
 #include "../util/list_util.h"
 
-ListNode* entrance_of_linked_list(ListNode* head) {
+ListNode *entrance_of_linked_list(ListNode *head) {
     if (head == NULL)
         return NULL;
-    ListNode* slow = head->next;
+    ListNode *slow = head->next;
     // 先判断是否存在第二个节点
     if (slow == NULL)
         return NULL;
-    ListNode* fast = slow->next;
-    ListNode* start = head;
+    ListNode *fast = slow->next;
+    ListNode *start = head;
     bool isCycle = false;
     // while 循环的条件如果不满足，则直接跳出，证明没有环
     while (fast != NULL) {
@@ -42,10 +49,11 @@ ListNode* entrance_of_linked_list(ListNode* head) {
 }
 
 void test_entrance_of_linked_list() {
-    ListNode* node1 = new ListNode(1);
-    ListNode* node2 = new ListNode(2);
+    ListNode *node1 = new ListNode(1);
+    ListNode *node2 = new ListNode(2);
     node1->next = node2;
     node2->next = node1;
-    ListNode* result = entrance_of_linked_list(node1);
+    ListNode *result = entrance_of_linked_list(node1);
 }
+
 #endif //INC_1STPROGRAM_OFFER_23_ENTRANCE_OF_CYCLED_LINKED_LIST_H

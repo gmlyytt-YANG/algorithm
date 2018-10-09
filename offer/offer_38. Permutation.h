@@ -1,25 +1,22 @@
-// Created by Li,Yang(Duer04) on 2018/8/10.
-// Author: liyang
-//
-// 字符串的全排列
+/*************************************************************************
+ *
+ * Copyright (c) 2018 liyang. All Rights Reserved
+ *
+ ************************************************************************/
+
+/*
+ * @file offer_38. Permutation.h
+ * @author gmlyytt@outlook.com
+ * @date 2018/08/10 10:29:00
+ * @brief 剑指offer第38题 字符串的全排列
+ * */
 
 #ifndef INC_1STPROGRAM_OFFER_38_PERMUTATION_H
 #define INC_1STPROGRAM_OFFER_38_PERMUTATION_H
 
-#include <iostream>
-#include <vector>
+#include "../util/header_util.h"
 
-void permutation_core(std::vector<std::string>& result, std::string& str, int begin);
-
-std::vector<std::string> permuation(std::string& str) {
-    std::vector<std::string> result;
-    permutation_core(result, str, 0);
-    auto unique_ptr = std::unique(result.begin(), result.end());
-    result.erase(unique_ptr, result.end());
-    return result;
-}
-
-void permutation_core(std::vector<std::string>& result, std::string& str, int begin) {
+void permutation_core(std::vector<std::string> &result, std::string &str, int begin) {
     if (begin == str.size()) {
         result.push_back(str);
     } else {
@@ -31,9 +28,18 @@ void permutation_core(std::vector<std::string>& result, std::string& str, int be
     }
 }
 
+std::vector<std::string> permuation(std::string &str) {
+    std::vector<std::string> result;
+    permutation_core(result, str, 0);
+    auto unique_ptr = std::unique(result.begin(), result.end());
+    result.erase(unique_ptr, result.end());
+    return result;
+}
+
 void test_permutation() {
     std::string str = "abcde";
     std::vector<std::string> result = permuation(str);
 
 }
+
 #endif //INC_1STPROGRAM_OFFER_38_PERMUTATION_H

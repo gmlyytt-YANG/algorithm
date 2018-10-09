@@ -1,13 +1,20 @@
-// Created by Li,Yang(Duer04) on 2018/8/16.
-// Author: liyang
-//
-// 数组中的最小的K个数
+/*************************************************************************
+ *
+ * Copyright (c) 2018 liyang. All Rights Reserved
+ *
+ ************************************************************************/
+
+/*
+ * @file offer_40. Minimum K.h
+ * @author gmlyytt@outlook.com
+ * @date 2018/08/16 10:29:00
+ * @brief 剑指offer第40题 数组中的最小的K个数
+* */
 
 #ifndef INC_1STPROGRAM_OFFER_40_MINIMUM_K_H
 #define INC_1STPROGRAM_OFFER_40_MINIMUM_K_H
 
-#include <set>
-#include <vector>
+#include "../util/header_util.h"
 
 void minimum_K(std::vector<int>& arr, int k) {
     std::multiset<int, std::greater<int>> ctner;

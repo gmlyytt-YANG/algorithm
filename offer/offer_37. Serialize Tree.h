@@ -1,13 +1,20 @@
-// Created by Li,Yang(Duer04) on 2018/8/29.
-// Author: liyang
-//
-// 序列化
+/*************************************************************************
+ *
+ * Copyright (c) 2018 liyang. All Rights Reserved
+ *
+ ************************************************************************/
+
+/*
+ * @file offer_37. Serialize Tree.h
+ * @author gmlyytt@outlook.com
+ * @date 2018/08/29 10:29:00
+ * @brief 剑指offer第37题 序列化
+ * */
 
 #ifndef INC_1STPROGRAM_OFFER_37_SERIALIZE_TREE_H
 #define INC_1STPROGRAM_OFFER_37_SERIALIZE_TREE_H
 
-#include <iostream>
-#include <stack>
+#include "../util/header_util.h"
 #include "../util/tree_util.h"
 
 std::string serialize(TreeNode* root) {

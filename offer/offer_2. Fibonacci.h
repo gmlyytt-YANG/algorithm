@@ -1,12 +1,20 @@
-// Created by Li,Yang(Duer04) on 2018/8/15.
-// Author: liyang
-//
-// 斐波那契序列
+/*************************************************************************
+ *
+ * Copyright (c) 2018 liyang. All Rights Reserved
+ *
+ ************************************************************************/
+
+/*
+ * @file offer_2. Fibonacci.h
+ * @author gmlyytt@outlook.com
+ * @date 2018/08/15 10:29:00
+ * @brief 剑指offer第2题 斐波那契序列
+ * */
 
 #ifndef INC_1STPROGRAM_OFFER_10_FIBONACCI_H
 #define INC_1STPROGRAM_OFFER_10_FIBONACCI_H
 
-#include <iostream>
+#include "../util/header_util.h"
 
 long long fibonacci(int num) {
     int arr[] = {0, 1};

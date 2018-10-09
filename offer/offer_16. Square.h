@@ -1,12 +1,20 @@
-// Created by Li,Yang(Duer04) on 2018/8/15.
-// Author: liyang
-//
-// 数值的整数次幂
+/*************************************************************************
+ *
+ * Copyright (c) 2018 liyang. All Rights Reserved
+ *
+ ************************************************************************/
+
+/*
+ * @file offer_16. Square.h
+ * @author gmlyytt@outlook.com
+ * @date 2018/08/15 10:29:00
+ * @brief 剑指offer第16题 数值的整数次幂
+ * */
 
 #ifndef INC_1STPROGRAM_OFFER_16_SQUARE_H
 #define INC_1STPROGRAM_OFFER_16_SQUARE_H
 
-#include <iostream>
+#include "../util/header_util.h"
 
 bool invalid_input = false;
 
@@ -55,4 +63,5 @@ void test_power() {
     double result = power(base, exponent);
     std::cout << result << std::endl;
 }
+
 #endif //INC_1STPROGRAM_OFFER_16_SQUARE_H
