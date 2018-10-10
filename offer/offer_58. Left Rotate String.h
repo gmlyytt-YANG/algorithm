@@ -57,7 +57,6 @@ void left_rotate_string_2(std::string &str, int num) {
 
 void test_left_rotate_string() {
     std::string str = "abcdefg";
-    // left_rotate_string(str, 2);
     left_rotate_string_2(str, 2);
 }
 
