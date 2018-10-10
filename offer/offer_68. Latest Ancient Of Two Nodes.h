@@ -2,57 +2,24 @@
 // Created by Li,Yang(Duer04) on 2018/7/23.
 //
 
+/*************************************************************************
+ *
+ * Copyright (c) 2018 Administrator. All Rights Reserved
+ *
+ ************************************************************************/
+
+/*
+ * @file offer_68. Latest Ancient Of Two Nodes.h
+ * @author gmlyytt@outlook.com
+ * @date 2018/07/23 15:33:00
+ * @brief 剑指offer第68题
+ * */
+
 #ifndef INC_1STPROGRAM_OFFER68_H
 #define INC_1STPROGRAM_OFFER68_H
 
+#include "../util/header_util.h"
 #include "../util/tree_util.h"
-#include <list>
-
-//bool GetNodePath(TreeNodeMulti* pRoot, TreeNodeMulti* pNode, std::list<TreeNodeMulti*>& path){
-//    if (!pRoot) {
-//        return false;
-//    }
-//    path.push_back(pRoot);
-//    if (pRoot == pNode)
-//        return true;
-//    bool found = false;
-//    auto iter = pRoot->children.begin();
-//    while (!found && iter != pRoot->children.end())
-//        found = GetNodePath(*iter++, pNode, path);
-//    if (!found)
-//        path.pop_back();
-//    return found;
-//}
-//
-//TreeNodeMulti* FindLatestAncients(std::list<TreeNodeMulti*>& path1, std::list<TreeNodeMulti*>& path2) {
-//    if (path1.empty() || path2.empty())
-//        return nullptr;
-//    TreeNodeMulti* last_node = nullptr;
-//    auto iter1 = path1.begin();
-//    auto iter2 = path2.begin();
-//    while (iter1 != path1.end() && iter2 != path2.end() && (*iter1 == *iter2)) {
-//        last_node = *iter1;
-//        ++iter1;
-//        ++iter2;
-//    }
-//    return last_node;
-//}
-//
-//TreeNodeMulti* FindLastCommonParents(TreeNodeMulti* pNode1, TreeNodeMulti* pNode2, TreeNodeMulti* pRoot) {
-//    if (!pRoot || !pNode1 || !pNode2)
-//        return nullptr;
-//    std::list<TreeNodeMulti*> path1;
-//    bool found = GetNodePath(pRoot, pNode1, path1);
-//
-//    std::list<TreeNodeMulti*> path2;
-//    if (found)
-//        found = GetNodePath(pRoot, pNode2, path2);
-//    if (found) {
-//        return FindLatestAncients(path1, path2);
-//    }
-//    else
-//        return nullptr;
-//}
 
 bool GetNodePath(TreeNodeMulti* pRoot, TreeNodeMulti* pNode, std::list<TreeNodeMulti*>& path, bool print_debug=true) {
     if (pRoot == nullptr) {

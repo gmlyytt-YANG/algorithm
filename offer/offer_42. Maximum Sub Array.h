@@ -1,15 +1,22 @@
-// Created by Li,Yang(Duer04) on 2018/8/25.
-// Author: liyang
-//
-// 最大子数组
+/*************************************************************************
+ *
+ * Copyright (c) 2018 Administrator. All Rights Reserved
+ *
+ ************************************************************************/
+
+/*
+ * @file offer_42. Maximum Sub Array.h
+ * @author gmlyytt@outlook.com
+ * @date 2018/08/25 9:34:00
+ * @brief 剑指offer42题 最大子数组
+ * */
 
 #ifndef INC_1STPROGRAM_OFFER_42_MAXIMUM_SUB_ARRAY_H
 #define INC_1STPROGRAM_OFFER_42_MAXIMUM_SUB_ARRAY_H
 
-#include <iostream>
-#include <vector>
+#include "../util/header_util.h"
 
-std::pair<int, int> maximum_subarray(std::vector<int>& arr) {
+std::pair<int, int> maximum_subarray(std::vector<int> &arr) {
     if (arr.empty()) {
         exit(-1);
     }
@@ -38,8 +45,9 @@ std::pair<int, int> maximum_subarray(std::vector<int>& arr) {
 }
 
 void test_maximum_subarray() {
-    std::vector<int> arr = {6,-3,-2,7,-15,1,2,2};
+    std::vector<int> arr = {6, -3, -2, 7, -15, 1, 2, 2};
     std::pair<int, int> result = maximum_subarray(arr);
 
 }
+
 #endif //INC_1STPROGRAM_OFFER_42_MAXIMUM_SUB_ARRAY_H

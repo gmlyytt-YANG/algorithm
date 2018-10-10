@@ -1,16 +1,22 @@
-// Created by Li,Yang(Duer04) on 2018/8/16.
-// Author: liyang
-//
-// 数据流的中位数
+/*************************************************************************
+ *
+ * Copyright (c) 2018 Administrator. All Rights Reserved
+ *
+ ************************************************************************/
+
+/*
+ * @file offer_41. Stream Median .h
+ * @author gmlyytt@outlook.com
+ * @date 2018/08/16 9:34:00
+ * @brief 剑指offer41题 数据流的中位数
+ * */
 
 #ifndef INC_1STPROGRAM_OFFER_41_STREAM_MEDIAN_H
 #define INC_1STPROGRAM_OFFER_41_STREAM_MEDIAN_H
 
-#include <iostream>
-#include <algorithm>
-#include <vector>
+#include "../util/header_util.h"
 
-template <class T>
+template<class T>
 class StreamMedian {
 public:
     void push(T value) {
@@ -54,11 +60,12 @@ private:
 };
 
 void test_stream_median() {
-    StreamMedian<int>* sm = new StreamMedian<int>();
+    StreamMedian<int> *sm = new StreamMedian<int>();
     std::vector<int> arr = {5, 4, 3, 5, 1};
-    for (auto& elem : arr) {
+    for (auto &elem : arr) {
         sm->push(elem);
         std::cout << sm->get_median() << std::endl;
     }
 }
+
 #endif //INC_1STPROGRAM_OFFER_41_STREAM_MEDIAN_H

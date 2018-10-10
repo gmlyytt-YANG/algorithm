@@ -1,15 +1,23 @@
-// Created by Li,Yang(Duer04) on 2018/8/18.
-// Author: liyang
-//
-// 平衡二叉树
+/*************************************************************************
+ *
+ * Copyright (c) 2018 Administrator. All Rights Reserved
+ *
+ ************************************************************************/
+
+/*
+ * @file offer_55. Balance Tree.h
+ * @author gmlyytt@outlook.com
+ * @date 2018/08/18 9:34:00
+ * @brief 剑指offer55题 平衡二叉树
+ * */
 
 #ifndef INC_1STPROGRAM_OFFER_51_BALANCE_TREE_H
 #define INC_1STPROGRAM_OFFER_51_BALANCE_TREE_H
 
-#include <iostream>
+#include "../util/header_util.h"
 #include "../util/tree_util.h"
 
-bool tree_is_balanced(TreeNode* root, int& depth) {
+bool tree_is_balanced(TreeNode *root, int &depth) {
     if (!root) {
         depth = 0;
         return true;
@@ -27,13 +35,13 @@ bool tree_is_balanced(TreeNode* root, int& depth) {
 }
 
 void test_tree_is_balanced() {
-    TreeNode* node1 = new TreeNode(1);
-    TreeNode* node2 = new TreeNode(2);
-    TreeNode* node3 = new TreeNode(3);
-    TreeNode* node4 = new TreeNode(4);
-    TreeNode* node5 = new TreeNode(5);
-    TreeNode* node6 = new TreeNode(6);
-    TreeNode* node7 = new TreeNode(7);
+    TreeNode *node1 = new TreeNode(1);
+    TreeNode *node2 = new TreeNode(2);
+    TreeNode *node3 = new TreeNode(3);
+    TreeNode *node4 = new TreeNode(4);
+    TreeNode *node5 = new TreeNode(5);
+    TreeNode *node6 = new TreeNode(6);
+    TreeNode *node7 = new TreeNode(7);
 
     connect_tree_node(node1, node2, node3);
     connect_tree_node(node2, node4, node5);
@@ -42,4 +50,5 @@ void test_tree_is_balanced() {
     int depth = 0;
     std::cout << tree_is_balanced(node1, depth) << std::endl;
 }
+
 #endif //INC_1STPROGRAM_OFFER_51_BALANCE_TREE_H

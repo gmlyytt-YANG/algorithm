@@ -1,14 +1,20 @@
-// Created by Li,Yang(Duer04) on 2018/8/29.
-// Author: liyang
-//
-// 圆圈中剩下的最后一个数字
+/*************************************************************************
+ *
+ * Copyright (c) 2018 Administrator. All Rights Reserved
+ *
+ ************************************************************************/
+
+/*
+ * @file offer_62. Last Number In Circle.h
+ * @author gmlyytt@outlook.com
+ * @date 2018/08/29 9:26:00
+ * @brief 剑指offer第62题 圆圈中剩下的最后一个数字
+ * */
 
 #ifndef INC_1STPROGRAM_OFFER_62_LAST_NUMBER_IN_CIRCLE_H
 #define INC_1STPROGRAM_OFFER_62_LAST_NUMBER_IN_CIRCLE_H
 
-#include <iostream>
-#include <list>
-#include <vector>
+#include "../util/header_util.h"
 
 int LastRemaining_Solution1(unsigned int n, unsigned int m) {
     if (n <= 0 || m < 1)

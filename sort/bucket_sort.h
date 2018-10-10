@@ -1,23 +1,29 @@
-// Created by Li,Yang(Duer04) on 2018/9/3.
-// Author: liyang
-//
-// 桶排序
+/*************************************************************************
+ *
+ * Copyright (c) 2018 liyang. All Rights Reserved
+ *
+ ************************************************************************/
+
+/*
+ * @file bucket_sort.h
+ * @author gmlyytt@outlook.com
+ * @date 2018/09/03 10:29:00
+ * @brief 桶排序
+ * */
 
 #ifndef SORT_BUCKET_SORT_H
 #define SORT_BUCKET_SORT_H
 
-#include <iostream>
-#include <vector>
-
+#include "../util/header_util.h"
 #include "count_sort.h"
 
-void bucket_sort(std::vector<int>& arr) {
+void bucket_sort(std::vector<int> &arr) {
     if (arr.empty()) {
         return;
     }
     int Max = find_max(arr);
     std::vector<int> temp(Max + 1, 0);
-    for (auto& elem : arr) {
+    for (auto &elem : arr) {
         ++temp[elem];
     }
     int index = 0;
@@ -32,4 +38,5 @@ void test_bucket_sort() {
     std::vector<int> arr = {1, 2, 3, 4, 5, 5, 6, 3, 2, 1, 9};
     bucket_sort(arr);
 }
+
 #endif //SORT_BUCKET_SORT_H

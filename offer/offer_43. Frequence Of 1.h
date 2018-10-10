@@ -1,12 +1,20 @@
-// Created by Li,Yang(Duer04) on 2018/8/20.
-// Author: liyang
-//
-// 1到n的连续整数序列中1出现的次数
+/*************************************************************************
+ *
+ * Copyright (c) 2018 Administrator. All Rights Reserved
+ *
+ ************************************************************************/
+
+/*
+ * @file offer_43. Frequence Of 1.h
+ * @author gmlyytt@outlook.com
+ * @date 2018/08/20 9:34:00
+ * @brief 剑指offer43题 1到n的连续整数序列中1出现的次数
+ * */
 
 #ifndef INC_1STPROGRAM_OFFER_43_FREQUENCE_OF_1_H
 #define INC_1STPROGRAM_OFFER_43_FREQUENCE_OF_1_H
 
-#include <iostream>
+#include "../util/header_util.h"
 
 int frequence_of_1(const int num) {
     if (num <= 0) {

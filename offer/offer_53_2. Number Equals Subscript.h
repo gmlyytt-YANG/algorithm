@@ -1,15 +1,22 @@
-// Created by Li,Yang(Duer04) on 2018/8/29.
-// Author: liyang
-//
-// 数组中数值与下标相等的元素
+/*************************************************************************
+ *
+ * Copyright (c) 2018 Administrator. All Rights Reserved
+ *
+ ************************************************************************/
+
+/*
+ * @file offer_53. Number Equals Subscript.h
+ * @author gmlyytt@outlook.com
+ * @date 2018/08/29 9:34:00
+ * @brief 剑指offer53_2题 数组中数值与下标相等的元素
+ * */
 
 #ifndef INC_1STPROGRAM_OFFER_53_NUMBER_EQUALS_SUBSCRIPT_H
 #define INC_1STPROGRAM_OFFER_53_NUMBER_EQUALS_SUBSCRIPT_H
 
-#include <iostream>
-#include <vector>
+#include "../util/header_util.h"
 
-int equal_subscript(std::vector<int>& arr) {
+int equal_subscript(std::vector<int> &arr) {
     if (arr.empty()) {
         return -1;
     }
@@ -33,4 +40,5 @@ void test_equal_subscript() {
     std::vector<int> arr = {-3, -1, 1, 3, 6, 7};
     std::cout << equal_subscript(arr) << std::endl;
 }
+
 #endif //INC_1STPROGRAM_OFFER_53_NUMBER_EQUALS_SUBSCRIPT_H

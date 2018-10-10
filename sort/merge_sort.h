@@ -1,15 +1,23 @@
-// Created by Li,Yang(Duer04) on 2018/8/2.
-// Author: liyang
-//
-// 归并排序
+/*************************************************************************
+ *
+ * Copyright (c) 2018 liyang. All Rights Reserved
+ *
+ ************************************************************************/
+
+/*
+ * @file merge_sort.h
+ * @author gmlyytt@outlook.com
+ * @date 2018/08/02 10:29:00
+ * @brief 归并排序
+ * */
+
 
 #ifndef SORT_MERGE_SORT_H
 #define SORT_MERGE_SORT_H
 
-#include <iostream>
-#include <vector>
+#include "../util/header_util.h"
 
-void merge(std::vector<int>& arr, int low, int mid, int high) {
+void merge(std::vector<int> &arr, int low, int mid, int high) {
     std::vector<int> arr_left(arr.begin() + low, arr.begin() + mid + 1);
     arr_left.push_back(INT_MAX);
     std::vector<int> arr_right(arr.begin() + mid + 1, arr.begin() + high + 1);
@@ -20,8 +28,7 @@ void merge(std::vector<int>& arr, int low, int mid, int high) {
     for (int i = low; i <= high; ++i) {
         if (arr_left[left_index] <= arr_right[right_index]) {
             arr[i] = arr_left[left_index++];
-        }
-        else {
+        } else {
             arr[i] = arr_right[right_index++];
         }
         std::cout << arr[i] << " " << std::endl;
@@ -29,12 +36,12 @@ void merge(std::vector<int>& arr, int low, int mid, int high) {
     std::cout << std::endl;
 }
 
-void merge_sort(std::vector<int>& arr, int low, int high) {
+void merge_sort(std::vector<int> &arr, int low, int high) {
     if (low < high) {
         int mid = (low + high) / 2;
         merge_sort(arr, low, mid);
         merge_sort(arr, mid + 1, high);
-        merge(arr, low, mid , high);
+        merge(arr, low, mid, high);
     }
 }
 

@@ -8,7 +8,7 @@
  * @file offer_58. Left Rotate String.h
  * @author gmlyytt@outlook.com
  * @date 2018/08/28 9:34:00
- * @brief 左旋字符串
+ * @brief 剑指offer58题 左旋字符串
  * */
 
 #ifndef INC_1STPROGRAM_OFFER_58_LEFT_ROTATE_STRING_H

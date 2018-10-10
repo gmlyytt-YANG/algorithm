@@ -1,19 +1,24 @@
-// Created by Li,Yang(Duer04) on 2018/8/24.
-// Author: liyang
-//
-// 排序数组中K的个数
+/*************************************************************************
+ *
+ * Copyright (c) 2018 Administrator. All Rights Reserved
+ *
+ ************************************************************************/
+
+/*
+ * @file offer_53_1. Missing Number In [0, N-1].h
+ * @author gmlyytt@outlook.com
+ * @date 2018/08/24 9:34:00
+ * @brief 剑指offer53_3题 排序数组中K的个数
+ * */
 
 #ifndef INC_1STPROGRAM_OFFER_53_GET_NUMBER_OF_K_H
 #define INC_1STPROGRAM_OFFER_53_GET_NUMBER_OF_K_H
 
-#include <iostream>
-#include <vector>
-
-using namespace std;
+#include "../util/header_util.h"
 
 class Solution {
 public:
-    int get_first_k(vector<int>& nums, int target, int low, int high) {
+    int get_first_k(vector<int> &nums, int target, int low, int high) {
         if (low > high) {
             return -1;
         }
@@ -32,7 +37,7 @@ public:
         return get_first_k(nums, target, low, high);
     }
 
-    int get_last_k(vector<int>& nums, int target, int low, int high) {
+    int get_last_k(vector<int> &nums, int target, int low, int high) {
         if (low > high) {
             return -1;
         }
@@ -52,7 +57,7 @@ public:
         return get_last_k(nums, target, low, high);
     }
 
-    vector<int> searchRange(vector<int>& nums, int target) {
+    vector<int> searchRange(vector<int> &nums, int target) {
         vector<int> result = {-1, -1};
         if (!nums.empty()) {
             int length = nums.size();
@@ -68,8 +73,9 @@ public:
 
 
 void test_searchRange() {
-    vector<int> arr = {5,7,7,8,8,10};
+    vector<int> arr = {5, 7, 7, 8, 8, 10};
     int number = 8;
     vector<int> result = Solution().searchRange(arr, number);
 }
+
 #endif //INC_1STPROGRAM_OFFER_53_GET_NUMBER_OF_K_H

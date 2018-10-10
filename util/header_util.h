@@ -17,11 +17,13 @@
 #include <cmath>
 #include <functional>
 #include <iostream>
+#include <list>
 #include <numeric>
 #include <map>
 #include <queue>
 #include <set>
 #include <stack>
+#include <sstream>
 #include <unordered_map>
 #include <unordered_set>
 #include <vector>

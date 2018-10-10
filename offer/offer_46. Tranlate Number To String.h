@@ -1,37 +1,20 @@
-// Created by Li,Yang(Duer04) on 2018/8/18.
-// Author: liyang
-//
-// 把数字翻译成字符串
+/*************************************************************************
+ *
+ * Copyright (c) 2018 Administrator. All Rights Reserved
+ *
+ ************************************************************************/
+
+/*
+ * @file offer_46. Tranlate Number To String.h
+ * @author gmlyytt@outlook.com
+ * @date 2018/08/18 9:34:00
+ * @brief 剑指offer46题 把数字翻译成字符串
+ * */
 
 #ifndef INC_1STPROGRAM_OFFER_46_TRANLATE_NUMBER_TO_STRING_H
 #define INC_1STPROGRAM_OFFER_46_TRANLATE_NUMBER_TO_STRING_H
 
-#include <iostream>
-#include <vector>
-
-//int translater_number_to_string(int num) {
-//    int result = 0;
-//    if (num < 0) {
-//        return result;
-//    }
-//    std::string string_num  = std::to_string(num);
-//    int length = string_num.size();
-//    std::vector<int> counts(length, 1);
-//    for (int i = length - 2; i >= 0; --i) {
-//        int count = counts[i + 1];
-//        int num_i = string_num[i] - '0';
-//        int num_i1 = string_num[i + 1] - '0';
-//        if (num_i * 10 + num_i1 <= 25 && num_i * 10 + num_i1 >= 10) {
-//            if (i == length - 2) {
-//                count += 1;
-//            } else {
-//                count += counts[i + 2];
-//            }
-//        }
-//        counts[i] = count;
-//    }
-//    return counts[0];
-//}
+#include "../util/header_util.h"
 
 int translater_number_to_string(int num) {
     if (num < 0) {

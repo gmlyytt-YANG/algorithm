@@ -1,13 +1,20 @@
-// Created by Li,Yang(Duer04) on 2018/8/18.
-// Author: liyang
-//
-// 数组中的逆序对
+/*************************************************************************
+ *
+ * Copyright (c) 2018 Administrator. All Rights Reserved
+ *
+ ************************************************************************/
+
+/*
+ * @file offer_51. Inverse Pair.h
+ * @author gmlyytt@outlook.com
+ * @date 2018/08/18 9:34:00
+ * @brief 剑指offer51题 数组中的逆序对
+ * */
 
 #ifndef INC_1STPROGRAM_OFFER_51_INVERSE_PAIR_H
 #define INC_1STPROGRAM_OFFER_51_INVERSE_PAIR_H
 
-#include <iostream>
-#include <vector>
+#include "../util/header_util.h"
 
 int inverse_pair_core(std::vector<int>& arr, int low, int high, int mid) {
     if (arr.empty()) {
