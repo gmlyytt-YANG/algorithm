@@ -1,6 +1,6 @@
-#include "offer/offer_58. Left Rotate String.h"
+#include "offer/offer_67. Str To Int.h"
 
 int main() {
-    test_left_rotate_string();
+    test_str_to_int();
     return 0;
 }
