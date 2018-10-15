@@ -19,14 +19,14 @@
 
 struct ListNode {
     int value;
-    ListNode* next;
+    ListNode *next;
 
     explicit ListNode(int val) {
         value = val;
         next = nullptr;
     }
 
-    explicit ListNode(const ListNode*& rhs) {
+    explicit ListNode(const ListNode *&rhs) {
         value = rhs->value;
         next = rhs->next;
     }
@@ -34,8 +34,8 @@ struct ListNode {
 
 struct ComplexListNode {
     int value;
-    ComplexListNode* next;
-    ComplexListNode* random;
+    ComplexListNode *next;
+    ComplexListNode *random;
 
     explicit ComplexListNode(int val) {
         value = val;
@@ -43,7 +43,7 @@ struct ComplexListNode {
         random = nullptr;
     }
 
-    explicit ComplexListNode(const ComplexListNode*& rhs) {
+    explicit ComplexListNode(const ComplexListNode *&rhs) {
         if (rhs) {
             value = rhs->value;
             next = rhs->next;
@@ -53,11 +53,13 @@ struct ComplexListNode {
 };
 
 struct cmp {
-    bool operator()(const ListNode* lhs, const ListNode* rhs) const {
+    bool operator()(const ListNode *lhs, const ListNode *rhs) const {
         return lhs->value > rhs->value;
     }
 };
 
-ListNode* create_list(std::vector<int>& values);
-void print_list(ListNode* head);
+ListNode *create_list(std::vector<int> &values);
+
+void print_list(ListNode *head);
+
 #endif //INC_1STPROGRAM_LISTUTIL_H

@@ -18,7 +18,7 @@
 #include "../util/header_util.h"
 
 void move_string_part(std::string &str, int start, int end) {
-    if (start < str.size() && end >= 0 && start > end) {
+    if (start < str.size() && end >= 0) {
         for (int i = start; i < str.size(); ++i) {
             str[end++] = str[i];
         }
@@ -33,7 +33,6 @@ void delete_comma(std::string &str) {
     int start_comma = length - 1;
     int end_comma = start_comma;
     int comma_count = 0;
-    std::cout << str << std::endl;
     for (int i = length - 2; i >= 1; --i) {
         int start_temp = start_comma;
         int end_temp = end_comma;
@@ -46,15 +45,15 @@ void delete_comma(std::string &str) {
         }
         if (start_comma > end_comma && (start_comma != start_temp || end_comma != end_temp)) {
             move_string_part(str, start_comma, end_comma);
-            std::cout << start_comma << " " << end_comma << " " << str << std::endl;
+            // std::cout << start_comma << " " << end_comma << " " << str << std::endl;
             comma_count += start_comma - end_comma;
         }
     }
-    std::cout << comma_count << std::endl;
+    // std::cout << comma_count << std::endl;
     for (int i = 0; i < comma_count; ++i) {
         str[length - 1 - i] = '\0';
     }
-    std::cout << str << std::endl;
+    // std::cout << str << std::endl;
 }
 
 void test_delete_comma() {

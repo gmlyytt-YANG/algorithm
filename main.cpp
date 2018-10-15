@@ -1,6 +1,6 @@
-#include "offer/offer_67. Str To Int.h"
+#include "common/common_21. Delete Comma.h"
 
 int main() {
-    test_str_to_int();
+    test_delete_comma();
     return 0;
 }

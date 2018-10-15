@@ -17,10 +17,6 @@
 #include "../util/header_util.h"
 #include "../util/list_util.h"
 
-//bool cmp(const ListNode*& lhs, const ListNode*& rhs) {
-//    return lhs->value < rhs->value;
-//}
-
 ListNode *merge_K_ordered_list(std::vector<ListNode *> list_table) {
     if (list_table.empty()) {
         return nullptr;
@@ -58,7 +54,6 @@ void test_merge_K_ordered_list() {
     ListNode *head4 = create_list(arr_4);
     std::vector<ListNode *> list_table = {head1, head2, head3, head4};
     ListNode *result = merge_K_ordered_list(list_table);
-
 }
 
 #endif //INC_1STPROGRAM_COMMON_4_MERGE_K_ORDERED_LIST_H
