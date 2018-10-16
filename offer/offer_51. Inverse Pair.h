@@ -16,7 +16,7 @@
 
 #include "../util/header_util.h"
 
-int inverse_pair_core(std::vector<int>& arr, int low, int high, int mid) {
+int inverse_pair_core(std::vector<int> &arr, int low, int high, int mid) {
     if (arr.empty()) {
         return 0;
     }
@@ -35,15 +35,15 @@ int inverse_pair_core(std::vector<int>& arr, int low, int high, int mid) {
     for (int i = low; i <= high; ++i) {
         if (arr_left[left_index] > arr_right[right_index]) {
             count += arr_left.size() - 1 - left_index;
-            ++right_index;
+            arr[i] = arr_right[right_index++];
         } else {
-            ++left_index;
+            arr[i] = arr_left[left_index++];
         }
     }
     return count;
 }
 
-int inverse_pair(std::vector<int>& arr, int low, int high) {
+int inverse_pair(std::vector<int> &arr, int low, int high) {
     if (low < high) {
         int mid = low + ((high - low) >> 1);
         int left_count = inverse_pair(arr, low, mid);
@@ -55,7 +55,7 @@ int inverse_pair(std::vector<int>& arr, int low, int high) {
 }
 
 void test_inverse_pair() {
-    std::vector<int> arr = { 6, 5, 4, 3, 2, 1 };
+    std::vector<int> arr = {9, 5, 2, 13, 1};
     std::cout << inverse_pair(arr, 0, arr.size() - 1) << std::endl;
 }
 

@@ -87,6 +87,30 @@ void combination_sum_to_m_core(vector<int> &arr, vector<int> &path, vector<vecto
     }
 }
 
+/*
+ * @brief just find whether arr has subsequence whose sum is m
+ *
+ * @param arr input vector
+ * @param m target sum
+ * @param n right bound
+ * @param start start position of recursive method
+ * @param count result
+ */
+void combination_sum_to_m_count(vector<int> &arr, int m, int n, int start, int& count) {
+    if (start >= n || start < 0) {
+        return;
+    }
+    for (int i = start; i < n; ++i) {
+        m -= arr[i];
+        if (m == 0) {
+            ++count;
+        } else if (m > 0) {
+            combination_sum_to_m_count(arr, m, n, i + 1, count);
+        }
+        m += arr[i];
+    }
+}
+
 void test_combination_sum_to_m_core() {
     vector<int> arr = {1, 2, 5, 5, 6, 9};
     int m = 11;
@@ -95,6 +119,9 @@ void test_combination_sum_to_m_core() {
     int start = 0;
     int top = 0;
     combination_sum_to_m_core(arr, path, result, m, start, top);
+    int count = 0;
+    /* combination_sum_to_m_count(arr, m, arr.size(), 0, count);
+    cout << count << endl; */
 }
 
 void test_find_sum_to_m() {
