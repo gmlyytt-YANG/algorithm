@@ -1,6 +1,6 @@
-#include "leetcode/leetcode_34. Find First and Last Position of Element in Sorted Array.h"
+#include "leetcode/leetcode_40. Combination Sum II.h"
 
 int main() {
-    test_search_range();
+    test_combination_sum_II();
     return 0;
 }
