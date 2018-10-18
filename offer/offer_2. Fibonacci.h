@@ -32,8 +32,16 @@ long long fibonacci(int num) {
     return result;
 }
 
+long long fibonacci2(int num) {
+    if (num == 1 || num == 2) {
+        return 1;
+    }
+    return fibonacci2(num - 1) + fibonacci2(num - 2);
+}
+
 void test_fibonacci() {
     int value = 100;
     std::cout << fibonacci(value) << std::endl;
 }
+
 #endif //INC_1STPROGRAM_OFFER_10_FIBONACCI_H
