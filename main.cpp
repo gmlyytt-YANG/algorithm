@@ -1,6 +1,6 @@
-#include "leetcode/leetcode_40. Combination Sum II.h"
+#include "common/common_27. Sort Plus Index.h"
 
 int main() {
-    test_combination_sum_II();
+    test_sort_plus_index();
     return 0;
 }
