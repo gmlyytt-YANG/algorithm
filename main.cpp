@@ -1,6 +1,6 @@
-#include "common/common_27. Sort Plus Index.h"
+#include "common/common_28. Find 0 Index.h"
 
 int main() {
-    test_sort_plus_index();
+    test_find_0_index();
     return 0;
 }
