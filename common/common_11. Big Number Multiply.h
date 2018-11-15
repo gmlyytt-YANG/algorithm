@@ -30,9 +30,18 @@ void multiply(std::vector<int>& arr1, std::vector<int>& arr2, std::vector<int>& 
     }
 
     for (int i = 1; i < result.size(); ++i) {
+        // don't need to consider carry, because the bits are enough.
         result[i] += result[i - 1] / 10;
         result[i - 1] %= 10;
     }
+
+    // remove 0s
+    int high = result.size() - 1;
+    while (result[high] == 0) {
+        --high;
+    }
+    std::vector<int> final_result(result.begin(), result.begin() + high + 1);
+    result = final_result;
 }
 
 void test_multiply() {
@@ -40,6 +49,10 @@ void test_multiply() {
     std::vector<int> arr2 = {3, 2};
     std::vector<int> result;
     multiply(arr1, arr2, result);
+    for (auto& elem : result) {
+        std::cout << elem << " ";
+    }
+    std::cout << std::endl;
 }
 
 #endif //INC_1STPROGRAM_COMMON_11_BIG_NUMBER_MULTIPLY_H

@@ -31,7 +31,7 @@ int specific_node_in_tree(TreeNode *root, int layer_num, int node_num) {
     if (layer_num < 0 || node_num < 0) {
         return -1;
     }
-    if (layer_num == 1 && node_num == 1 && root) {
+    if (layer_num == 1 && node_num == 1) {
         return root->val;
     }
     int layer_to_be_stat = 1;
