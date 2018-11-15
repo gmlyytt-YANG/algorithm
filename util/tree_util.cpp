@@ -31,3 +31,16 @@ void connect_tree_node_with_parent(TreeNodeWithParent* root,
         }
     }
 }
+
+void insert_bst(TreeNode*& root, int elem) {
+    if (!root) {
+        TreeNode* new_node = new TreeNode(elem);
+        root = new_node;
+    } else {
+        if (root->val < elem) {
+            insert_bst(root->right, elem);
+        } else {
+            insert_bst(root->left, elem);
+        }
+    }
+}

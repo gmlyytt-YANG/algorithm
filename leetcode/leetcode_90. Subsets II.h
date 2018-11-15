@@ -47,11 +47,27 @@ public:
         }
         sol.resize(size);
     }
+
+    vector<vector<int>> subsets_basic(vector<int> &nums) {
+        vector<vector<int>> result(1, vector<int>());
+        for (auto &elem : nums) {
+            int length = result.size();
+            for (int i = 0; i < length; ++i) {
+                result.push_back(result[i]);
+                result.back().push_back(elem);
+            }
+        }
+
+        return result;
+    }
 };
 
+
 void test_subsets_II() {
-    vector<int> arr = {1, 2, 2};
+    vector<int> arr = {1, 2, 3};
     vector<vector<int>> result = Solution().subsetsWithDup(arr);
+    result = Solution().subsets_basic(arr);
+    cout << endl;
 }
 
 #endif //INC_1STPROGRAM_LEETCODE_90_SUBSETS_II_H

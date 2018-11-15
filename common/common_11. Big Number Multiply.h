@@ -49,10 +49,6 @@ void test_multiply() {
     std::vector<int> arr2 = {3, 2};
     std::vector<int> result;
     multiply(arr1, arr2, result);
-    for (auto& elem : result) {
-        std::cout << elem << " ";
-    }
-    std::cout << std::endl;
 }
 
 #endif //INC_1STPROGRAM_COMMON_11_BIG_NUMBER_MULTIPLY_H
