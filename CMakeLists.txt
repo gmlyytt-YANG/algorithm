@@ -9,4 +9,4 @@ add_executable(algorithm
         util/list_util.h util/list_util.cpp
         util/header_util.h
         "offer/offer_58. Left Rotate String.h"
-        "leetcode/leetcode_73. Set Matrix Zeroes.h" "leetcode/leetcode_216. Combination Sum III.h" "leetcode/leetcode_229. Majority Element II.h")
+        "leetcode/leetcode_73. Set Matrix Zeroes.h" "leetcode/leetcode_216. Combination Sum III.h" "leetcode/leetcode_229. Majority Element II.h" "leetcode/leetcode_148. Sort List.h")
