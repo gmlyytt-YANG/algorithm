@@ -1,6 +1,6 @@
-#include "leetcode/leetcode_148. Sort List.h"
+#include "leetcode/leetcode_20. Valid Parentheses.h"
 
 int main() {
-    test_sort_list();
+    test_valid_parentheses();
     return 0;
 }
