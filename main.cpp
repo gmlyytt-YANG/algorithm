@@ -1,6 +1,6 @@
-#include "leetcode/leetcode_14. Longest Common Prefix.h"
+#include "leetcode/leetcode_83. Remove Duplicates from Sorted List.h"
 
 int main() {
-    test_longest_common_prefix();
+    test_delete_duplicates();
     return 0;
 }

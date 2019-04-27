@@ -8,7 +8,7 @@
  * @file leetcode_58. Length of Last Word.h
  * @author gmlyytt@outlook.com
  * @date 2019/4/27
- * @brief 
+ * @brief https://leetcode.com/problems/length-of-last-word/
  * */
 #ifndef INC_1STPROGRAM_LEETCODE_58_LENGTH_OF_LAST_WORD_H
 #define INC_1STPROGRAM_LEETCODE_58_LENGTH_OF_LAST_WORD_H
