@@ -1,6 +1,6 @@
-#include "leetcode/leetcode_20. Valid Parentheses.h"
+#include "leetcode/leetcode_14. Longest Common Prefix.h"
 
 int main() {
-    test_valid_parentheses();
+    test_longest_common_prefix();
     return 0;
 }
