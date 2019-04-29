@@ -30,4 +30,6 @@
 
 using namespace std;
 
+void print_2_dim_vector(vector<vector<int>>& data);
+
 #endif //ALGORITHM_CXX_HEADER_UTIL_H

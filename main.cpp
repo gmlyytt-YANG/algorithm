@@ -1,6 +1,6 @@
-#include "leetcode/leetcode_108. Convert Sorted Array to Binary Search Tree.h"
+#include "leetcode/leetcode_118. Pascal's Triangle.h"
 
 int main() {
-    test_sorted_array_to_bST();
+    test_generate();
     return 0;
 }
