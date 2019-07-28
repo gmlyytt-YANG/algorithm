@@ -27,7 +27,7 @@
 #include <unordered_map>
 #include <unordered_set>
 #include <vector>
-
+#include <memory>
 using namespace std;
 
 void print_2_dim_vector(vector<vector<int>>& data);

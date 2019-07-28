@@ -1,6 +1,6 @@
-#include "leetcode/leetcode_118. Pascal's Triangle.h"
+#include "competition_classic/competition_classic_5.2.1_pupil_arithmetic.h"
 
 int main() {
-    test_generate();
+    test_pupil_arithmetic();
     return 0;
 }
