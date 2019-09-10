@@ -1,6 +1,6 @@
-#include "competition_classic/competition_classic_5.2.1_pupil_arithmetic.h"
+#include "competition_classic/competition_classic_5.2.2_one_thousand_product.h"
 
 int main() {
-    test_pupil_arithmetic();
+    test_one_thousand_product();
     return 0;
 }
