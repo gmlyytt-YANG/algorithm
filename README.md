@@ -16,10 +16,15 @@ In order to master algorithms of interviewing, I just collected some parts of al
 - offer
 
   [Coding Interview exercise](https://github.com/zhedahht/CodingInterviewChinese2)
+  
 - sort
 
   Some "sort" code coding by myself.
 
+- competition classic
+
+  刘汝佳，算法竞赛入门经典，第一版
+  
 - util  
 
   Basic data structure, such as tree and list.
