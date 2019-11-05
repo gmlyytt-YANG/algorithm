@@ -28,6 +28,7 @@
 #include <unordered_set>
 #include <vector>
 #include <memory>
+#include <deque>
 using namespace std;
 
 void print_2_dim_vector(vector<vector<int>>& data);

@@ -15,6 +15,8 @@
 #ifndef INC_1STPROGRAM_TREEUTIL_H
 #define INC_1STPROGRAM_TREEUTIL_H
 
+#include "../util/header_util.h"
+
 #include <iostream>
 #include <vector>
 #include <list>
@@ -29,7 +31,12 @@ struct TreeNode {
     TreeNode *left;
     TreeNode *right;
 
-    explicit TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+    TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+    TreeNode(const TreeNode*& in) {
+        val = in->val;
+        left = in->left;
+        right = in->right;
+    }
 };
 
 struct TreeNodeWithParent {
@@ -47,7 +54,7 @@ struct TreeLinkNode {
     TreeLinkNode *left, *right, *next;
 
     explicit TreeLinkNode(int x) :
-            val(x), left(NULL), right(NULL), next(NULL) {}
+            val(x), left(nullptr), right(nullptr), next(nullptr) {}
 };
 
 void connect_tree_node_with_parent(TreeNodeWithParent *root,
@@ -60,5 +67,7 @@ void connect_tree_node(TreeNode *root, TreeNode *left, TreeNode *right);
 void connect_tree_node(TreeLinkNode *root, TreeLinkNode *left, TreeLinkNode *right);
 
 void insert_bst(TreeNode*& root, int elem);
+
+bool print_tree(const TreeNode& root);
 
 #endif //INC_1STPROGRAM_TREEUTIL_H

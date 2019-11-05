@@ -44,3 +44,21 @@ void insert_bst(TreeNode*& root, int elem) {
         }
     }
 }
+
+bool print_tree(const TreeNode& root) {
+    std::deque<TreeNode*> tree_que;
+    auto* node = new TreeNode(root);
+    tree_que.push_back(node);
+    while(!tree_que.empty()) {
+        node = tree_que.front();
+        if(node->left != nullptr) {
+            tree_que.push_back(node->left);
+        }
+        if(node->right != nullptr) {
+            tree_que.push_back(node->right);
+        }
+        std::cout << node->val <<'\t';
+        tree_que.pop_front();
+    }
+    return true;
+}

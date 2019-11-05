@@ -1,6 +1,6 @@
-#include "competition_classic/competition_classic_5.2.2_one_thousand_product.h"
+#include "sumian/sunmian_1_monotone_stack.h"
 
 int main() {
-    test_one_thousand_product();
+    test_sunmian_1_monotone_stack();
     return 0;
 }
