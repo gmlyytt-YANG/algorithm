@@ -26,6 +26,8 @@ bool one_thousand_product(int n) {
     std::vector<int> nums(max_bit, 0);
 
     nums[0] = 1;
+
+    // 模拟每个数与数组的每一位相乘的过程
     for (int i = 2; i <= n; ++i) {
         int carry = 0;
         for (int j = 0; j < max_bit; ++j) {
@@ -35,6 +37,7 @@ bool one_thousand_product(int n) {
         }
     }
 
+    // 忽略前导0
     int j = max_bit - 1;
     for (; j >= 0; --j) {
         if (nums[j]) {
