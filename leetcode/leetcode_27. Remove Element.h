@@ -9,6 +9,7 @@
  * @author gmlyytt@outlook.com
  * @date 2019/12/22 10:32:29
  * @brief https://leetcode.com/problems/remove-element/
+ * @tutorial https://github.com/gmlyytt-YANG/algorithm/blob/master/tutorial/leetcode/leetcode_27.%20Remove%20Element.md
  * */
 
 #ifndef INC_1STPROGRAM_LEETCODE_27_REMOVE_ELEMENT_H
