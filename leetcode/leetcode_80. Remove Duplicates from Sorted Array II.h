@@ -9,6 +9,7 @@
  * @author gmlyytt@outlook.com
  * @date 2019/12/26 08:11:48
  * @brief https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/description/
+ * @tutorial https://github.com/gmlyytt-YANG/algorithm/blob/master/tutorial/leetcode/leetcode_80.%20Remove%20Duplicates%20from%20Sorted%20Array%20II.md
  * */
 
 #ifndef INC_1STPROGRAM_LEETCODE_80_REMOVE_DUPLICATES_FROM_SORTED_ARRAY_II_H
