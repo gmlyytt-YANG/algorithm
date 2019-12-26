@@ -55,3 +55,6 @@ public:
 
 > 空间复杂度：O(n), 最坏情况是nums中没有重复的元素
 
+
+## 参考
+[sliding window](https://juejin.im/post/5c74a2e2f265da2dea053355)
