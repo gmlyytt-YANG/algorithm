@@ -63,7 +63,7 @@ public:
 ### 2. 旋转三次数组
 较为成熟的方法，不再多说，需要注意的是，在进行旋转之前，必须要对k进行length的取余操作，不然会出现旋转失败的问题。
 
-```
+```C++
 class Solution {
 public:
     void rotate2(vector<int> &nums, int k) {
