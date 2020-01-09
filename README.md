@@ -8,6 +8,6 @@ C++ & Python code implementation of leetcode
 ## Show List
 
 
-| No | Title | Difficulty |
-| :------| ------: | :------: |
-| 134 | [Gas Station](https://github.com/gmlyytt-YANG/algorithm/issues/1) | Medium |
+| No | Title | Difficulty | Classification
+| :------| ------: | :------: |:------: |
+| 134 | [Gas Station](https://github.com/gmlyytt-YANG/algorithm/issues/1) | Medium |Array|
