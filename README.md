@@ -1,6 +1,8 @@
-# algorithm
+# Geek LeetCoder
 
-C++ code of leetcode, common algorithms, coding_interview
+C++ & Python code implementation of leetcode
+
+![](https://img.shields.io/badge/language-C%2B%2B-green)
 
 # introduction
 
