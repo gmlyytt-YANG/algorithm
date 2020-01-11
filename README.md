@@ -1,30 +1,18 @@
-# algorithm
+# Geek LeetCoder
 
-C++ code of leetcode, common algorithms, coding_interview
+C++ & Python code implementation of leetcode
 
-# introduction
+![](https://img.shields.io/badge/language-C%2B%2B-green) ![](https://img.shields.io/badge/language-Python-red) ![](https://img.shields.io/badge/thinking-cool-yellow)
 
-In order to master algorithms of interviewing, I just collected some parts of algorithms with categories as following:
 
-- common
+## Show List
 
-  In this part, I just write the interview questions that I met at before.
-- leetcode
 
-  Leetcode exercise.
-  
-- offer
+| No | Title | Difficulty | Tags | 
+| :------| ------: | :------: |:------: |
+| 134 | [Gas Station](https://github.com/gmlyytt-YANG/algorithm/issues/1) | Medium |Array|
+| [118](https://leetcode.com/problems/pascals-triangle/description/) | [Pascal's Triangle](https://github.com/gmlyytt-YANG/algorithm/issues/2) | Easy | Array|
+| [119](https://leetcode.com/problems/pascals-triangle-ii/description/) | [Pascal's Triangle II](https://github.com/gmlyytt-YANG/algorithm/issues/3) | Easy | Array |
+| [189](https://leetcode.com/problems/rotate-array/description/)| [Rotate Array](https://github.com/gmlyytt-YANG/algorithm/blob/master/tutorial/leetcode/leetcode_189.%20Rotate%20Array.md) | Easy | Array|
+| [26](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/)| [Remove Duplicates from Sorted Array](https://github.com/gmlyytt-YANG/algorithm/blob/master/tutorial/leetcode/leetcode_26.%20Remove%20Duplicates%20from%20Sorted%20Array.md) | Easy | Array|
 
-  [Coding Interview exercise](https://github.com/zhedahht/CodingInterviewChinese2)
-  
-- sort
-
-  Some "sort" code coding by myself.
-
-- competition classic
-
-  刘汝佳，算法竞赛入门经典，第一版
-  
-- util  
-
-  Basic data structure, such as tree and list.
