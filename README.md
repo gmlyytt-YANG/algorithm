@@ -1,11 +1,11 @@
-# Geek LeetCoder
+# Geek Coder
 
-C++ & Python code implementation of leetcode
+C++ & Python code implementation of algorithms
 
 ![](https://img.shields.io/badge/language-C%2B%2B-green) ![](https://img.shields.io/badge/language-Python-red) ![](https://img.shields.io/badge/thinking-cool-yellow)
 
 
-## Show List
+## Leetcode
 
 
 | No | Title | Difficulty | Tags | 
