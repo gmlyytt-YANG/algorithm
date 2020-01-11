@@ -12,3 +12,4 @@ C++ & Python code implementation of leetcode
 | :------| ------: | :------: |:------: |
 | 134 | [Gas Station](https://github.com/gmlyytt-YANG/algorithm/issues/1) | Medium |Array|
 | 118 | [Pascal's Triangle](https://github.com/gmlyytt-YANG/algorithm/issues/2) | Easy | Array|
+| 119 | [Pascal's Triangle II](https://github.com/gmlyytt-YANG/algorithm/issues/3) | Easy | Array |
