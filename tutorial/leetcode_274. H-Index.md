@@ -19,7 +19,9 @@ Explanation: [3,0,6,1,5] means the researcher has 5 papers in total and each of 
 
 ## 思路 & 实现
 
-这道题首先需要明确题意，需要深刻理解"A scientist has index *h* if *h* of his/her *N* papers have **at least** *h* citations each, and the other *N − h* papers have **no more than** *h* citations each."这句话的含义。
+这道题首先需要明确题意，需要深刻理解"A scientist has index *h* if *h* of his/her *N* papers have **at least** *h* citations each, and the other *N − h* papers have **no more than** *h* citations each."这句话的含义，其具体含义可以借助下图来辅助理解。
+
+![](/Users/liyang98/Work/个人资料/code/img-repo/github/leetcode_274.png)
 
 题目中的例子不是特别形象，更为形象的例子为如果`citations = [6, 7, 8]`, 则`Output`应该为3，因为大于等于3的paper的数量是3篇，而大于等于4的paper的数量是3篇，因而4不符合要求，3才是`Output`。
 
