@@ -23,4 +23,5 @@ C++ & Python code implementation of algorithms
 | [169](https://leetcode.com/problems/majority-element/)| [Majority Element](https://github.com/gmlyytt-YANG/algorithm/blob/master/tutorial/leetcode_169.%20Majority%20Element.md) | Easy | Array|
 | [229](https://leetcode.com/problems/majority-element-ii/description/)| [Majority Element II](https://github.com/gmlyytt-YANG/algorithm/blob/master/tutorial/leetcode_229.%20Majority%20Element%20II.md) | Medium | Array|
 | [274](https://leetcode.com/problems/h-index/)| [H-Index](https://github.com/gmlyytt-YANG/algorithm/blob/master/tutorial/leetcode_274.%20H-Index.md) | Medium | Array|
+| [243](https://leetcode.com/problems/shortest-word-distance/)| [Shortest Word Distance](https://github.com/gmlyytt-YANG/algorithm/blob/master/tutorial/leetcode_243.%20Shortest%20Word%20Distance.md) | Easy | Array|
 | [108](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)| [Convert Sorted Array to Binary Search Tree](https://github.com/gmlyytt-YANG/algorithm/blob/master/tutorial/leetcode_108.%20Convert%20Sorted%20Array%20to%20Binary%20Search%20Tree.md) | Easy | Tree|
