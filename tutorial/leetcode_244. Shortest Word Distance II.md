@@ -60,4 +60,4 @@ private:
 
 综上所述，本文中的算法时间复杂度无论在何种情况下都要比[**Shortest Word Distance**](https://github.com/gmlyytt-YANG/algorithm/blob/master/tutorial/leetcode_243.%20Shortest%20Word%20Distance.md)提供算法的时间复杂度要小，因为[**Shortest Word Distance**](https://github.com/gmlyytt-YANG/algorithm/blob/master/tutorial/leetcode_243.%20Shortest%20Word%20Distance.md)提供算法无论如何都是要把数组遍历完成才行。
 
-**空间复杂度**`O(n)`，用到额外的辅助空间`m`来存储`words`中不同元素出现的位置。
+**空间复杂度**：`O(n)`，用到额外的辅助空间`m`来存储`words`中不同元素出现的位置。
