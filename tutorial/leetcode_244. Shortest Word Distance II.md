@@ -19,7 +19,7 @@ You may assume that *word1* does not equal to *word2*, and *word1* and *word2* a
 
 #### **算法思路**
 
-沿用原先[**Shortest Word Distance**]([https://github.com/gmlyytt-YANG/algorithm/blob/master/tutorial/leetcode_243.%20Shortest%20Word%20Distance.md](https://github.com/gmlyytt-YANG/algorithm/blob/master/tutorial/leetcode_243. Shortest Word Distance.md))的做法是没有问题的，这里提供一个用空间来换时间的算法，可以将算法的**平均时间复杂度**降到更低，算法思路比较直接，如下：
+沿用原先[**Shortest Word Distance**](https://github.com/gmlyytt-YANG/algorithm/blob/master/tutorial/leetcode_243.%20Shortest%20Word%20Distance.md)的做法是没有问题的，这里提供一个用空间来换时间的算法，可以将算法的**平均时间复杂度**降到更低，算法思路比较直接，如下：
 
 1. 类WordDistance构造函数的输入为words，且类定义unordered_map类型的私有变量m, 储存的是words中不同元素出现的位置，因为words中可能存在重复元素，因而unordered_map的second的变量类型定义为vector<int>。
 2. 在提取最短距离的函数shortestDistanceII中，定义i和j两个指针，指向的是遍历m过程中word1和word2出现的位置。
@@ -56,12 +56,8 @@ private:
 
 #### **时空复杂度**
 
-**时间复杂度**
+**时间复杂度**：可以看出上述算法的最坏时间复杂度依然是`O(n-1)`，n为words的长度，能想到的示例为words{"practice", "practice", "practice", "coding"}，word1为"practice"，word2为"coding"，可以发现上述算法在这个case上是需要将words所有的元素都遍历完成后才能得到result的。而最好的时间复杂度为`O(1)`，testcase很好找，word1和word2在words中都出现过一次就可以了，因而算法的时间min(M, N)，M代表的是word1在words中出现的次数，N代表的是word2在words中出现的次数。
 
-可以看出上述算法的最坏时间复杂度依然是`O(n-1)`，n为words的长度，能想到的示例为words{"practice", "practice", "practice", "coding"}，word1为"practice"，word2为"coding"，可以发现上述算法在这个case上是需要将words所有的元素都遍历完成后才能得到result的。而最好的时间复杂度为`O(1)`，testcase很好找，word1和word2在words中都出现过一次就可以了，因而算法的时间min(M, N)，M代表的是word1在words中出现的次数，N代表的是word2在words中出现的次数。
+综上所述，本文中的算法时间复杂度无论在何种情况下都要比[**Shortest Word Distance**](https://github.com/gmlyytt-YANG/algorithm/blob/master/tutorial/leetcode_243.%20Shortest%20Word%20Distance.md)提供算法的时间复杂度要小，因为[**Shortest Word Distance**](https://github.com/gmlyytt-YANG/algorithm/blob/master/tutorial/leetcode_243.%20Shortest%20Word%20Distance.md)提供算法无论如何都是要把数组遍历完成才行。
 
-综上所述，本文中的算法时间复杂度无论在何种情况下都要比[**Shortest Word Distance**]([https://github.com/gmlyytt-YANG/algorithm/blob/master/tutorial/leetcode_243.%20Shortest%20Word%20Distance.md](https://github.com/gmlyytt-YANG/algorithm/blob/master/tutorial/leetcode_243. Shortest Word Distance.md))提供算法的时间复杂度要小，因为[**Shortest Word Distance**]([https://github.com/gmlyytt-YANG/algorithm/blob/master/tutorial/leetcode_243.%20Shortest%20Word%20Distance.md](https://github.com/gmlyytt-YANG/algorithm/blob/master/tutorial/leetcode_243. Shortest Word Distance.md))提供算法无论如何都是要把数组遍历完成才行。
-
-**空间复杂度**
-
-`O(n)`，用到额外的辅助空间m来存储words中不同元素出现的位置。
+**空间复杂度**`O(n)`，用到额外的辅助空间m来存储words中不同元素出现的位置。
