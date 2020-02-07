@@ -28,6 +28,6 @@ C++ & Python code implementation of algorithms
 | [245](https://leetcode.com/problems/shortest-word-distance-iii/description/)| [Shortest Word Distance III](https://github.com/gmlyytt-YANG/algorithm/blob/master/tutorial/leetcode_245.%20Shortest%20Word%20Distance%20III.md) | Easy | Array|
 | [217](https://leetcode.com/problems/contains-duplicate/)| [Contains Duplicate](https://github.com/gmlyytt-YANG/algorithm/blob/master/tutorial/leetcode_217.%20Contains%20Duplicate.md) | Easy | Array|
 | [55](https://leetcode.com/problems/jump-game/)| [Jump Game](https://github.com/gmlyytt-YANG/algorithm/blob/master/tutorial/leetcode_55.%20Jump%20Game.md) | Medium | Array & DP|
-| [45](https://leetcode.com/problems/jump-game-ii/)| [Jump Game II](https://github.com/gmlyytt-YANG/algorithm/blob/master/tutorial/leetcode_55.%20Jump%20Game.md) | Hard | Array|
+| [45](https://leetcode.com/problems/jump-game-ii/)| [Jump Game II](https://github.com/gmlyytt-YANG/algorithm/blob/master/tutorial/leetcode_45.%20Jump%20Game%20II.md) | Hard | Array|
 | [217](https://leetcode.com/problems/contains-duplicate/)| [Contains Duplicate](https://github.com/gmlyytt-YANG/algorithm/blob/master/tutorial/leetcode_217.%20Contains%20Duplicate.md) | Easy | Array|
 | [108](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)| [Convert Sorted Array to Binary Search Tree](https://github.com/gmlyytt-YANG/algorithm/blob/master/tutorial/leetcode_108.%20Convert%20Sorted%20Array%20to%20Binary%20Search%20Tree.md) | Easy | Tree|
