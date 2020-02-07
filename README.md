@@ -29,5 +29,6 @@ C++ & Python code implementation of algorithms
 | [217](https://leetcode.com/problems/contains-duplicate/)| [Contains Duplicate](https://github.com/gmlyytt-YANG/algorithm/blob/master/tutorial/leetcode_217.%20Contains%20Duplicate.md) | Easy | Array|
 | [55](https://leetcode.com/problems/jump-game/)| [Jump Game](https://github.com/gmlyytt-YANG/algorithm/blob/master/tutorial/leetcode_55.%20Jump%20Game.md) | Medium | Array & DP|
 | [45](https://leetcode.com/problems/jump-game-ii/)| [Jump Game II](https://github.com/gmlyytt-YANG/algorithm/blob/master/tutorial/leetcode_45.%20Jump%20Game%20II.md) | Hard | Array|
+| [121](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)| [Best Time to Buy and Sell Stock](https://github.com/gmlyytt-YANG/algorithm/blob/master/tutorial/leetcode_121.%20Best%20Time%20to%20Buy%20and%20Sell%20Stock.md) | Easy | Array|
 | [217](https://leetcode.com/problems/contains-duplicate/)| [Contains Duplicate](https://github.com/gmlyytt-YANG/algorithm/blob/master/tutorial/leetcode_217.%20Contains%20Duplicate.md) | Easy | Array|
 | [108](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)| [Convert Sorted Array to Binary Search Tree](https://github.com/gmlyytt-YANG/algorithm/blob/master/tutorial/leetcode_108.%20Convert%20Sorted%20Array%20to%20Binary%20Search%20Tree.md) | Easy | Tree|
