@@ -148,7 +148,7 @@ public:
 
 #### **算法思路**
 
-和[leetcode_11. Container With Most Water](https://github.com/gmlyytt-YANG/algorithm/blob/master/tutorial/leetcode_11.%20Container%20With%20Most%20Water.md)算法思路类似，定义左右指针left和right**，如果height[left]<height[right]，则需要让left++才有可能找到比height[right]更高的位置从而能够储存水，反之则需要让right--才有可能找到比height[left]更高的位置从而能够储存水**，在left++的过程中，如果发现有局部储存水的可能性，即height[left] < 已有的max_left，则记下当前的存水量，而在right--的过程中也可以局部存水。
+和[leetcode_11. Container With Most Water](https://github.com/gmlyytt-YANG/algorithm/blob/master/tutorial/leetcode_11.%20Container%20With%20Most%20Water.md)算法思路类似，定义左右指针left和right，**如果height[left]<height[right]，则需要让left++才有可能找到比height[right]更高的位置从而能够储存水，反之则需要让right--才有可能找到比height[left]更高的位置从而能够储存水**，在left++的过程中，如果发现有局部储存水的可能性，即height[left] < 已有的max_left，则记下当前的存水量，而在right--的过程中也可以局部存水。
 
 算法的C++代码如下所示：
 
