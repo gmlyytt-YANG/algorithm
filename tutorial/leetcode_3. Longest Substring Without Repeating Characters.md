@@ -20,41 +20,74 @@ Explanation: The answer is "wke", with the length of 3.
 ```
 ## 思路 & 实现
 
-### 1. 快慢指针思想(sliding window)
-定义快慢指针fast=0,slow=0，并且定义set,用于存放fast划过位置的不同元素。而后进行如下操作：
+### 1. 滑动窗口思想
 
-循环遍历fast和slow，
-1. 如果nums[fast]没有在set中出现，则将nums[fast]push到set中，且fast++；
-2. 如果nums[fast]在set中出现，则将nums[slow]从set中删掉，且slow++。
+定义指针i=0,j=0，并且定义set,用于存放nums[j]。而后进行如下操作：
 
-上述算法的精髓在于如果nums[fast]不在set中出现，则会一直删除nums中的元素，直到slow与fast之间没有与fast相同的元素时，才将nums[fast]重新push到set中。
+循环遍历j，如果nums[j]在set中，则删除nums[i]，且i++，否则将nums[j]放入set中，且j++，且记录最大不重复子字符串的长度。
 
-如下是C++的实现方式。
-
-```C++
-class Solution {
-public:
-    int removeDuplicates(vector<int> &nums) {
-        int length = nums.size();
-        if (length == 0) {
-            return 0;
-        }
-        int slow = 0;
-        for (int fast = 1; fast < length; ++fast) {
-            if (nums[slow] != nums[fast]) {
-                ++slow;
-                nums[slow] = nums[fast];
-            }
-        }
-        return slow + 1;
-    }
-};
+```Python
+class Solution(object):
+    def lengthOfLongestSubstring(self, s):
+        """
+        :type s: str
+        :rtype: int
+        """
+        i = 0
+        j = 0
+        n = len(s)
+        result = 0
+        
+        ctnr = set()
+        
+        while i < n and j < n:
+            if s[j] in ctnr:
+                ctnr.remove(s[i])
+                i += 1
+                continue
+            ctnr.add(s[j])
+            j += 1
+            result = max(result, j - i)
+                
+        return result
 ```
 
-> 时间复杂度：O(2n), slow和fast至多遍历n步
+> 时间复杂度：O(2n)，因为i和j都有可能遍历一遍
 
 > 空间复杂度：O(n), 最坏情况是nums中没有重复的元素
 
+### 2. 滑动窗口跳跃思想
 
-## 参考
-[sliding window](https://juejin.im/post/5c74a2e2f265da2dea053355)
+定义指针i=0,j=0，并且定义dict,用于存放j划过位置的不同元素。而后进行如下操作：
+
+循环遍历j，将nums[j]以及j+1以key-value的形式存入dict中，如果nums[j]在dict中出现过，则i直接跳到dict[nums[j]]的位置上，之后记录最大不重复子字符串的长度，这样的好处是省略了思路1中的不必要的计算。
+
+
+如下是Python的实现方式。
+
+```Python
+class Solution(object):
+    def lengthOfLongestSubstring(self, s):
+        """
+        :type s: str
+        :rtype: int
+        """
+        n = len(s)
+        ctnr = dict()
+        
+        i = 0
+        result = 0
+        for j in range(n):
+            if s[j] in ctnr:
+                i = max(i, ctnr[s[j]])
+                
+            result = max(result, j - i + 1)
+            ctnr[s[j]] = j + 1
+            
+        return result
+        
+```
+
+> 时间复杂度：O(n)
+
+> 空间复杂度：O(n), 最坏情况是nums中没有重复的元素
