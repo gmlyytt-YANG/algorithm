@@ -10,6 +10,7 @@ C++ & Python code implementation of algorithms
 
 | No | Solutions | Difficulty | Tags | 
 | :------| ------: | :------: |:------: |
+| [1](https://leetcode.com/problems/two-sum/) | [Two Sum](https://github.com/gmlyytt-YANG/algorithm/blob/master/tutorial/leetcode_1.%20Two%20Sum.md) | Easy |Array|
 | [2](https://leetcode.com/problems/add-two-numbers/) | [Add Two Numbers](https://github.com/gmlyytt-YANG/algorithm/blob/master/tutorial/leetcode_2.%20Add%20Two%20Numbers.md) | Medium |Array|
 | [134](https://leetcode.com/problems/gas-station/description/) | [Gas Station](https://github.com/gmlyytt-YANG/algorithm/blob/master/tutorial/leetcode_134.%20Gas%20Station.md) | Medium |Array|
 | [118](https://leetcode.com/problems/pascals-triangle/description/) | [Pascal's Triangle](https://github.com/gmlyytt-YANG/algorithm/blob/master/tutorial/leetcode_118.%20Pascal's%20Triangle.md) | Easy | Array|
